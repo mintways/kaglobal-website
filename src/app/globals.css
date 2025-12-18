@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Define custom theme tokens (Tailwind v4 syntax) */
+@theme {
+  --color-ka-ink: #0B1320;
+  --color-ka-maroon: #7F2B38;
+  --color-ka-purple: #4D1475;
+
+  --font-playfair: var(--font-playfair), sans-serif;
+  --font-ptsans: var(--font-pt-sans), sans-serif;
+}
+
+/* ---------- Global Font Defaults ---------- */
+@layer base {
+  html {
+    @apply font-ptsans text-ka-ink bg-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-playfair text-ka-ink;
+  }
+
+  p,
+  li,
+  span,
+  a,
+  button,
+  input,
+  textarea {
+    @apply font-ptsans;
+  }
+}

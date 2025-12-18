@@ -1,0 +1,19 @@
+kaglobalip/
+├─ src/
+│  ├─ app/
+│  │  ├─ (site)/
+│  │  ├─ (legal)/
+│  │  ├─ api/
+│  │  └─ not-found.tsx
+│  ├─ components/
+│  ├─ content/
+│  ├─ lib/
+│  ├─ hooks/
+│  ├─ styles/
+│  └─ config/
+├─ public/
+├─ next.config.mjs
+├─ tailwind.config.ts
+├─ tsconfig.json
+└─ package.json
+
