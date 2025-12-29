@@ -1,4 +1,3 @@
-// components/sections/services/strategic-advisory/CapabilitiesSection.tsx
 "use client";
 
 import { Lightbulb, Globe2, ShieldCheck, Calculator } from "lucide-react";

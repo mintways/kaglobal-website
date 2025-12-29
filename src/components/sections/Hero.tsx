@@ -46,7 +46,7 @@ export default function Hero() {
 
                     <div className="mt-8">
                         <a
-                            href="#about"
+                            href="/about"
                             className="font-playfair inline-flex items-center justify-center rounded-[10px] border border-[#7F2B38] bg-[#7F2B38] px-[30px] py-[15px] text-[18px] font-normal capitalize leading-[14px] text-[#F0F0F0] shadow-sm transition-colors duration-300 ease-in-out hover:bg-transparent hover:text-[#2E2E2E] hover:border-[#7F2B38] focus:outline-none focus:ring-2 focus:ring-[#7F2B38]/30"
                         >
                             Know More

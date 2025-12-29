@@ -47,13 +47,13 @@ export default function AnnouncementBar() {
 
             {/* External links should be <a>, not Next <Link> */}
             <ExternalIconLink
-              href="https://www.linkedin.com/company/kanalysis"
+              href="#"
               label="LinkedIn"
             >
               <Linkedin className="h-4 w-4" aria-hidden />
             </ExternalIconLink>
 
-            <ExternalIconLink href="https://x.com/kanalysis" label="X (Twitter)" pill>
+            <ExternalIconLink href="#" label="X (Twitter)" pill>
               <XIcon className="h-3.5 w-3.5" aria-hidden />
             </ExternalIconLink>
 

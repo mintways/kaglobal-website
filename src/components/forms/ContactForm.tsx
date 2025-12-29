@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import FormField from "./FormField";
+import { getRecaptchaToken } from "@/components/recaptcha/recaptcha";
 
 export default function ContactForm() {
     const [state, setState] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -18,6 +19,10 @@ export default function ContactForm() {
         }
 
         try {
+
+            // ✅ get v3 token (action must match server check)
+            const recaptchaToken = await getRecaptchaToken("contact_form");
+            
             const res = await fetch("/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -27,6 +32,7 @@ export default function ContactForm() {
                     phone: formData.get("phone"),
                     subject: formData.get("subject"),
                     message: formData.get("message"),
+                    recaptchaToken,
                 }),
             });
 

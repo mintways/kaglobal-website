@@ -28,7 +28,7 @@ export default function ReadyToProtectSection() {
                             {/* CTA row */}
                             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
                                 <a
-                                    href="#contact"
+                                    href="/contact"
                                     className="font-ptsans inline-flex items-center justify-center rounded-full bg-gradient-to-r from-[#7F2B38] to-[#4D1475] px-6 py-3 text-sm sm:text-base font-semibold text-white shadow-sm transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#7F2B38]/30"
                                 >
                                     Schedule a Meeting

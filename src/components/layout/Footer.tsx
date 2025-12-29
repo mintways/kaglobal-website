@@ -28,7 +28,7 @@ export default function Footer() {
                         </Link>
                         <p className="font-ptsans mt-4 max-w-md text-sm leading-6 text-gray-600">
                             Global IP strategy, filings, renewals, and enforcement—built for speed, scale, and compliance
-                            across 90+ jurisdictions.
+                            across 100+ jurisdictions.
                         </p>
 
                         {/* Socials */}

@@ -89,9 +89,9 @@ export default function HeroAbout() {
 
                         <motion.h1
                             variants={fadeUp}
-                            className="font-playfair mt-4 text-4xl font-semibold leading-tight md:text-5xl"
+                            className="mt-4 text-4xl font-semibold leading-tight md:text-5xl"
                         >
-                            <span className="animate-gradient bg-gradient-to-r from-[#7F2B38] via-[#4D1475] to-[#7F2B38] bg-clip-text text-transparent [background-size:200%_auto]">
+                            <span className="font-playfair animate-gradient bg-gradient-to-r from-[#7F2B38] via-[#4D1475] to-[#7F2B38] bg-clip-text text-transparent [background-size:200%_auto]">
                                 Who We Are
                             </span>
                         </motion.h1>

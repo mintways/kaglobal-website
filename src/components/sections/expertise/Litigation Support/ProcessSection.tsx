@@ -1,4 +1,3 @@
-// components/sections/litigation/ProcessSection.tsx
 "use client";
 import * as React from "react";
 import IconTitle from "@/components/ui/IconTitle";

@@ -1,10 +1,6 @@
 "use client";
 
-import { Playfair_Display, PT_Sans } from "next/font/google";
 import { BadgeDollarSign, Coins, Users } from "lucide-react";
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"] });
-const ptsans = PT_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
 type Item = {
     title: string;
@@ -43,7 +39,7 @@ const ITEMS: Item[] = [
 export default function FeeGaps() {
     return (
         <section className="mx-auto max-w-7xl px-6 py-16 md:py-20">
-            <h2 className={`${playfair.className} text-4xl leading-tight text-[#0B1320] md:text-5xl`}>
+            <h2 className="font-playfair text-4xl leading-tight text-[#0B1320] md:text-5xl">
                 Where IP renewal fee gaps appear
             </h2>
 
@@ -53,9 +49,9 @@ export default function FeeGaps() {
                         key={title}
                         className="relative rounded-[28px] bg-gradient-to-b from-[#FBE8EF] to-white p-6 pt-8 shadow-[inset_0_1px_0_0_#ffffff] ring-1 ring-[#E9E8ED]"
                     >
-                        <h3 className={`${playfair.className} text-3xl text-[#0B1320]`}>{title}</h3>
+                        <h3 className="font-playfair text-3xl text-[#0B1320]">{title}</h3>
 
-                        <p className={`${ptsans.className} mt-4 text-[16px] leading-7 text-[#344054]`}>
+                        <p className="font-ptsans mt-4 text-[16px] leading-7 text-[#344054]">
                             <span className="font-semibold text-[#0B1320]">In a typical setup,</span> {typical}
                         </p>
 
@@ -65,7 +61,7 @@ export default function FeeGaps() {
                                 <span className="mt-1 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#900C3F] to-[#0B1320]">
                                     <Icon className="h-5 w-5 text-white" />
                                 </span>
-                                <p className={`${ptsans.className} text-[15px] leading-6 text-[#344054]`}>
+                                <p className="font-ptsans text-[15px] leading-6 text-[#344054]">
                                     <span className="font-semibold text-[#0B1320]">In an optimized setup,</span> {optimized}
                                 </p>
                             </div>

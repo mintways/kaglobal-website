@@ -1,10 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { Playfair_Display, PT_Sans } from "next/font/google";
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"] });
-const ptsans = PT_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
 const KA = {
     maroon: "#7F2B38",
@@ -19,11 +15,12 @@ export default function CopyrightHero() {
     const tail = rest.join(" ");
 
     return (
-        <section className="relative w-full bg-white"
-        style={{ background: "linear-gradient(180deg, #F6F7F9 0%, #FFFFFF 70%)" }}>
-            {/* --- background layers to match Trademark Hero --- */}
+        <section
+            className="relative w-full bg-white overflow-hidden font-ptsans"
+            style={{ background: "linear-gradient(180deg, #F6F7F9 0%, #FFFFFF 70%)" }}
+        >
+            {/* --- background layers --- */}
             <div aria-hidden className="pointer-events-none absolute inset-0 z-0">
-                {/* auras */}
                 <div
                     className="absolute -left-28 top-0 h-72 w-72 rounded-full opacity-25 blur-3xl"
                     style={{ background: `radial-gradient(closest-side, ${KA.purple}, transparent)` }}
@@ -32,7 +29,6 @@ export default function CopyrightHero() {
                     className="absolute -bottom-28 -right-28 h-72 w-72 rounded-full opacity-25 blur-3xl"
                     style={{ background: `radial-gradient(closest-side, ${KA.maroon}, transparent)` }}
                 />
-                {/* grid */}
                 <div
                     className="absolute inset-0 opacity-[0.05]"
                     style={{
@@ -54,12 +50,13 @@ export default function CopyrightHero() {
                         COPYRIGHTS
                     </div>
 
-                    {/* Heading */}
+                    {/* Heading (Playfair) */}
                     <h1
-                        className={`${playfair.className} text-[clamp(2rem,4vw,3rem)] font-bold leading-tight text-[${KA.text}]`}
+                        className="font-playfair text-[clamp(2rem,4vw,3rem)] leading-tight"
+                        style={{ color: KA.text }}
                     >
                         <span
-                            className="bg-clip-text text-transparent"
+                            className="font-playfair bg-clip-text text-transparent"
                             style={{ backgroundImage: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})` }}
                         >
                             {first}
@@ -67,14 +64,14 @@ export default function CopyrightHero() {
                         {tail}
                     </h1>
 
-                    {/* Subtitle */}
-                    <p className={`${ptsans.className} mt-5 max-w-2xl text-[17px] leading-7 text-[#2B3852]/90`}>
-                        We secure your copyrights worldwide. from software and written content to art, music, and film — through strategic 
-                        registrations, precise recordals, and swift enforcement across 90+ countries
+                    {/* Subtitle (PT Sans) */}
+                    <p className="mt-5 max-w-2xl text-[17px] leading-7 text-[#2B3852]/90 font-ptsans">
+                        We secure your copyrights worldwide—from software and written content to art, music, and film—through
+                        strategic registrations, precise recordals, and swift enforcement across 90+ countries.
                     </p>
 
                     {/* CTA + feature chips */}
-                    <div className="mt-8 flex flex-col gap-4">
+                    <div className="mt-8 flex flex-col gap-4 font-ptsans">
                         <Link
                             href="/contact"
                             className="w-fit rounded-2xl bg-gradient-to-r from-[#7F2B38] to-[#4D1475] px-8 py-3 text-[15px] font-semibold text-white transition-transform hover:-translate-y-0.5"
@@ -83,16 +80,14 @@ export default function CopyrightHero() {
                         </Link>
 
                         <div className="flex flex-wrap gap-3">
-                            {["Repetitive & Recordals", "Licensing & Assignments", "Online Enforcement & Takedowns"].map(
-                                (t) => (
-                                    <span
-                                        key={t}
-                                        className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700"
-                                    >
-                                        {t}
-                                    </span>
-                                )
-                            )}
+                            {["Registrations & Recordals", "Licensing & Assignments", "Online Enforcement & Takedowns"].map((t) => (
+                                <span
+                                    key={t}
+                                    className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700 font-ptsans"
+                                >
+                                    {t}
+                                </span>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -125,13 +120,10 @@ function CopyrightDocIcon({ className = "" }: { className?: string }) {
                 </linearGradient>
             </defs>
 
-            {/* Document */}
             <rect x="80" y="60" width="260" height="360" rx="26" stroke="url(#cpGrad)" strokeWidth="10" fill="#F8F9FB" />
-            {/* Folded corner */}
             <path d="M340 60v72c0 8 6 14 14 14h66" stroke="url(#cpGrad)" strokeWidth="10" />
             <path d="M352 60l68 68" stroke="url(#cpGrad)" strokeWidth="10" />
 
-            {/* Text lines */}
             {[130, 164, 198, 232].map((y, i) => (
                 <line key={i} x1="110" x2="286" y1={y} y2={y} stroke="#1F2A44" strokeOpacity="0.15" strokeWidth="10" />
             ))}
@@ -143,7 +135,7 @@ function CopyrightDocIcon({ className = "" }: { className?: string }) {
                 x="370"
                 y="342"
                 textAnchor="middle"
-                fontFamily="Inter, system-ui, Arial"
+                fontFamily="var(--font-playfair), serif"
                 fontSize="44"
                 fontWeight="700"
                 fill="#4D1475"

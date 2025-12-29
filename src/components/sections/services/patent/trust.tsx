@@ -85,7 +85,7 @@ export default function TrustSection({
 
                     <motion.h2
                         variants={fadeUp}
-                        className="mt-4 text-4xl leading-tight text-ka-ink md:text-5xl font-euclid"
+                        className="mt-4 text-4xl leading-tight text-ka-ink md:text-5xl font-playfair"
                     >
                         {heading}
                     </motion.h2>
@@ -138,7 +138,7 @@ export default function TrustSection({
                                             {b.icon}
                                         </div>
                                         <div>
-                                            <h3 className="text-[18px] sm:text-[20px] md:text-[22px] leading-tight text-ka-ink font-euclid">
+                                            <h3 className="text-[18px] sm:text-[20px] md:text-[22px] leading-tight text-ka-ink font-playfair">
                                                 {b.title}
                                             </h3>
                                             <p className="mt-1.5 text-[14.5px] sm:text-[15px] leading-7 font-ptsans" style={{ color: KA.muted }}>

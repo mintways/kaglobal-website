@@ -101,7 +101,7 @@ export default function Hero({
 
     return (
         <section
-            className="relative w-full overflow-hidden"
+            className="relative w-full overflow-hidden font-ptsans"
             style={{ background: `linear-gradient(180deg, ${KA.bgFrom} 0%, ${KA.bgTo} 70%)` }}
         >
             {/* Background auras + subtle grid */}
@@ -126,10 +126,6 @@ export default function Hero({
                 />
             </div>
 
-            {/* Layout:
-          - mobile: grid-cols-1 (stack) → icon first, text second
-          - sm+:    grid-cols-12 → text left (span 6/12), icon right (span 6/12)
-      */}
             <div className="relative z-10 mx-auto max-w-7xl grid grid-cols-1 sm:grid-cols-12 items-center gap-8 sm:gap-10 px-4 py-10 sm:px-6 sm:py-16 md:gap-12 md:py-24">
                 {/* ICON — top on mobile, right on sm+ */}
                 <div className="order-1 sm:order-2 sm:col-start-7 sm:col-end-13 w-full">
@@ -146,7 +142,7 @@ export default function Hero({
                 >
                     <motion.span
                         variants={fadeUp}
-                        className="inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-[11px] tracking-[0.18em] text-[#475467] ring-1 ring-black/5"
+                        className="inline-flex items-center gap-2 rounded-full bg-white/80 px-3 py-1 text-[11px] tracking-[0.18em] text-[#475467] ring-1 ring-black/5 font-ptsans"
                     >
                         <span className="h-1.5 w-1.5 rounded-full bg-ka-maroon" />
                         {kicker}
@@ -157,7 +153,7 @@ export default function Hero({
                         className="mt-3 sm:mt-4 leading-[1.08] text-[clamp(1.9rem,6vw,3.2rem)] md:text-[clamp(2.2rem,3.8vw,3.6rem)] lg:text-[clamp(2.6rem,3.2vw,3.9rem)] max-w-[22ch]"
                     >
                         <span
-                            className="bg-clip-text text-transparent"
+                            className="bg-clip-text text-transparent font-playfair"
                             style={{ backgroundImage: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})` }}
                         >
                             {firstWord}
@@ -173,10 +169,9 @@ export default function Hero({
                         {description}
                     </motion.p>
 
-                    {/* Buttons: stack on mobile, inline on sm+ */}
                     <motion.div
                         variants={fadeUp}
-                        className="mt-7 sm:mt-8 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3 sm:gap-4"
+                        className="mt-7 sm:mt-8 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3 sm:gap-4 font-ptsans"
                     >
                         <Link
                             href={ctaHref}
@@ -184,6 +179,7 @@ export default function Hero({
                         >
                             {ctaText}
                         </Link>
+
                         <Link
                             href={secondaryCtaHref}
                             className="inline-flex justify-center items-center rounded-2xl px-5 py-3 text-[14px] font-semibold text-ka-ink ring-1 ring-black/10 hover:ring-black/20 w-full sm:w-auto"
@@ -192,8 +188,7 @@ export default function Hero({
                         </Link>
                     </motion.div>
 
-                    {/* Marquee */}
-                    <motion.div variants={fadeUp} className="mt-7 sm:mt-8 w-full overflow-hidden">
+                    <motion.div variants={fadeUp} className="mt-7 sm:mt-8 w-full overflow-hidden font-ptsans">
                         <div className="relative">
                             <div className="pointer-events-none absolute inset-y-0 left-0 w-6 sm:w-10 md:w-12 bg-gradient-to-r from-white to-transparent" />
                             <div className="pointer-events-none absolute inset-y-0 right-0 w-6 sm:w-10 md:w-12 bg-gradient-to-l from-white to-transparent" />
@@ -201,7 +196,7 @@ export default function Hero({
                                 {marqueeItems.concat(marqueeItems).map((item, i) => (
                                     <span
                                         key={`${item}-${i}`}
-                                        className="rounded-full bg-white px-3 py-1 text-[11px] sm:text-xs text-ka-ink ring-1 ring-[#E6E8EC] shadow-sm"
+                                        className="rounded-full bg-white px-3 py-1 text-[11px] sm:text-xs text-ka-ink ring-1 ring-[#E6E8EC] shadow-sm font-ptsans"
                                     >
                                         {item}
                                     </span>
@@ -213,13 +208,22 @@ export default function Hero({
             </div>
 
             <style jsx>{`
-        .animate-marquee { animation: marquee 18s linear infinite; }
+        .animate-marquee {
+          animation: marquee 18s linear infinite;
+        }
         @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
         }
         @media (prefers-reduced-motion: reduce) {
-          .animate-marquee { animation: none; transform: none; }
+          .animate-marquee {
+            animation: none;
+            transform: none;
+          }
         }
       `}</style>
         </section>

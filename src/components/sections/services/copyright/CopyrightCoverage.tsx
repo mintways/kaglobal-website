@@ -5,41 +5,15 @@ import { Zap, Globe2, Asterisk } from "lucide-react";
 const KA = {
     maroon: "#7F2B38",
     purple: "#4D1475",
-    text: "#1F2A44",
-    muted: "#2B3852",
 };
 
 const items = [
-    {
-        icon: Zap,
-        title: "Art and Visual Works",
-        desc: "Robust protection for fine art, photography, and digital media.",
-    },
-    {
-        icon: Globe2,
-        title: "Literary and Digital Content",
-        desc: "Strategic registration and defense for written content, software, and digital platforms",
-    },
-    {
-        icon: Asterisk,
-        title: "Multimedia and Performance Works",
-        desc: "Comprehensive copyright coverage for music, film, and live performances.",
-    },
-    {
-        icon: Zap,
-        title: "Extensive Geographic Coverage",
-        desc: "Safeguarding your creative assets in over 90 countries",
-    },
-    {
-        icon: Globe2,
-        title: "Market-Specific Expertise",
-        desc: "Tailored solutions for diverse regional IP frameworks.",
-    },
-    {
-        icon: Asterisk,
-        title: "Future Focus",
-        desc: "Anticipating and securing your position in emerging markets.",
-    },
+    { icon: Zap, title: "Art and Visual Works", desc: "Robust protection for fine art, photography, and digital media." },
+    { icon: Globe2, title: "Literary and Digital Content", desc: "Strategic registration and defense for written content, software, and digital platforms." },
+    { icon: Asterisk, title: "Multimedia and Performance Works", desc: "Comprehensive copyright coverage for music, film, and live performances." },
+    { icon: Zap, title: "Extensive Geographic Coverage", desc: "Safeguarding your creative assets in over 90 countries." },
+    { icon: Globe2, title: "Market-Specific Expertise", desc: "Tailored solutions for diverse regional IP frameworks." },
+    { icon: Asterisk, title: "Future Focus", desc: "Anticipating and securing your position in emerging markets." },
 ];
 
 export default function CopyrightCoverage() {
@@ -53,16 +27,12 @@ export default function CopyrightCoverage() {
             <div
                 aria-hidden
                 className="pointer-events-none absolute -top-20 -left-24 h-64 w-64 rounded-full opacity-20 blur-3xl"
-                style={{
-                    background: `radial-gradient(circle at center, ${KA.purple}33, transparent 70%)`,
-                }}
+                style={{ background: `radial-gradient(circle at center, ${KA.purple}33, transparent 70%)` }}
             />
             <div
                 aria-hidden
                 className="pointer-events-none absolute -bottom-24 -right-24 h-80 w-80 rounded-full opacity-20 blur-3xl"
-                style={{
-                    background: `radial-gradient(circle at center, ${KA.maroon}33, transparent 70%)`,
-                }}
+                style={{ background: `radial-gradient(circle at center, ${KA.maroon}33, transparent 70%)` }}
             />
 
             <div className="relative mx-auto max-w-7xl px-6 py-16 sm:px-8 md:py-20">
@@ -73,12 +43,10 @@ export default function CopyrightCoverage() {
                         GLOBAL FOOTPRINT
                     </span>
 
-                    <h2 className="font-euclid mt-3 text-[clamp(1.9rem,3.6vw,2.6rem)] font-semibold leading-tight text-[#1F2A44]">
+                    <h2 className="mt-3 text-[clamp(1.9rem,3.6vw,2.6rem)] font-bold leading-tight text-ka-ink">
                         <span
-                            className="bg-clip-text text-transparent"
-                            style={{
-                                backgroundImage: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})`,
-                            }}
+                            className="font-playfair bg-clip-text text-transparent"
+                            style={{ backgroundImage: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})` }}
                         >
                             {first}
                         </span>{" "}
@@ -105,8 +73,12 @@ export default function CopyrightCoverage() {
                                     </span>
                                 </span>
 
-                                <h3 className="font-euclid mt-4 text-lg font-semibold leading-snug text-[#1F2A44]">{title}</h3>
-                                <p className="font-ptsans mt-2 text-[14.5px] leading-relaxed text-[#2B3852]/85">{desc}</p>
+                                <h3 className="font-playfair mt-4 text-lg font-semibold leading-snug text-ka-ink">
+                                    {title}
+                                </h3>
+                                <p className="font-ptsans mt-2 text-[14.5px] leading-relaxed text-[#2B3852]/85">
+                                    {desc}
+                                </p>
                             </div>
                         </div>
                     ))}

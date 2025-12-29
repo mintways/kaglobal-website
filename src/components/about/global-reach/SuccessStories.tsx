@@ -34,16 +34,18 @@ export default function SuccessStories() {
             <div className="mx-auto max-w-7xl px-6 py-12 sm:py-14 md:py-16">
                 {/* Header */}
                 <div className="mx-auto max-w-3xl text-center">
-                    <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-700 font-euclid">
+                    <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-700 font-ptsans">
                         <span className="h-1.5 w-1.5 rounded-full bg-[#7F2B38]" />
                         Success Stories
                     </div>
-                    <h2 className="mt-3 font-euclid text-2xl sm:text-3xl md:text-4xl">
+
+                    <h2 className="mt-3 font-playfair text-2xl sm:text-3xl md:text-4xl">
                         <span className="bg-gradient-to-r from-[#7F2B38] to-[#4D1475] bg-clip-text text-transparent">
                             Driving Innovation Across Borders
                         </span>
                     </h2>
-                    <p className="mt-3 text-base text-black/70 md:text-lg">
+
+                    <p className="mt-3 text-base text-black/70 md:text-lg font-ptsans">
                         From deep-tech to consumer brands, KA Global IP turns IP challenges into growth opportunities—globally.
                     </p>
                 </div>
@@ -53,8 +55,10 @@ export default function SuccessStories() {
                     {rows.map(({ icon: Icon, title, text, tag }, i) => (
                         <article
                             key={title}
-                            className="group relative overflow-hidden rounded-3xl border border-[#EAEAEA] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-                            style={{ animation: `fadeInUp 0.55s cubic-bezier(.22,.61,.36,1) ${i * 0.1}s both` }}
+                            className="group relative overflow-hidden rounded-3xl border border-[#EAEAEA] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md font-ptsans"
+                            style={{
+                                animation: `fadeInUp 0.55s cubic-bezier(.22,.61,.36,1) ${i * 0.1}s both`,
+                            }}
                         >
                             {/* hover edge glow */}
                             <div className="pointer-events-none absolute inset-px rounded-[22px] opacity-0 transition-opacity duration-300 group-hover:opacity-100 [background:linear-gradient(180deg,rgba(127,43,56,0.10),rgba(77,20,117,0.10))]" />
@@ -65,16 +69,22 @@ export default function SuccessStories() {
                                     <Icon className="h-6 w-6" strokeWidth={1.75} />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-euclid font-semibold text-[#1F1F22]">{title}</h3>
-                                    <div className="mt-1 text-xs font-medium text-black/50">{tag}</div>
+                                    <h3 className="font-playfair text-lg font-semibold text-[#1F1F22]">
+                                        {title}
+                                    </h3>
+                                    <div className="mt-1 text-xs font-medium text-black/50 font-ptsans">
+                                        {tag}
+                                    </div>
                                 </div>
                             </div>
 
                             {/* Body */}
-                            <p className="relative z-10 mt-3 text-sm text-[#555]">{text}</p>
+                            <p className="relative z-10 mt-3 text-sm text-[#555] font-ptsans">
+                                {text}
+                            </p>
 
                             {/* CTA */}
-                            <div className="relative z-10 mt-4 inline-flex items-center text-sm font-medium text-[#4D1475]">
+                            <div className="relative z-10 mt-4 inline-flex items-center text-sm font-medium text-[#4D1475] font-ptsans">
                                 Read case
                                 <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                             </div>
@@ -92,11 +102,21 @@ export default function SuccessStories() {
             {/* subtle appear animation */}
             <style jsx global>{`
         @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(14px); }
-          to { opacity: 1; transform: translateY(0); }
+          from {
+            opacity: 0;
+            transform: translateY(14px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
         @media (prefers-reduced-motion: reduce) {
-          [style*="fadeInUp"] { animation: none !important; opacity: 1 !important; transform: none !important; }
+          [style*="fadeInUp"] {
+            animation: none !important;
+            opacity: 1 !important;
+            transform: none !important;
+          }
         }
       `}</style>
         </Section>

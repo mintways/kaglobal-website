@@ -27,7 +27,7 @@ export default function TrademarkHero({
 
     return (
         <section
-            className="relative w-full overflow-hidden bg-white px-4 py-10 sm:px-6 md:px-10 lg:px-14"
+            className="relative w-full overflow-hidden bg-white px-4 py-10 sm:px-6 md:px-10 lg:px-14 font-ptsans"
             style={{
                 background: "linear-gradient(180deg, #F6F7F9 0%, #FFFFFF 70%)",
             }}
@@ -69,17 +69,15 @@ export default function TrademarkHero({
                     {/* TEXT (below on mobile, left on desktop) */}
                     <div className="order-2 md:order-1 md:col-span-7">
                         {/* kicker */}
-                        <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/90 px-3 py-1 text-[11px] sm:text-xs font-ptsans tracking-widest text-gray-500 backdrop-blur-sm">
+                        <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/90 px-3 py-1 text-[11px] sm:text-xs tracking-widest text-gray-500 backdrop-blur-sm font-ptsans">
                             <span className="h-2 w-2 rounded-full bg-ka-maroon" />
                             TRADEMARKS
                         </div>
 
-                        {/* title (Euclid) */}
-                        <h1
-                            className="font-euclid text-[clamp(1.9rem,4vw,3.2rem)] font-semibold leading-tight text-ka-ink"
-                        >
+                        {/* title (Playfair) */}
+                        <h1 className="text-[clamp(1.9rem,4vw,3.2rem)] leading-tight text-ka-ink">
                             <span
-                                className="bg-clip-text text-transparent"
+                                className="font-playfair bg-clip-text text-transparent"
                                 style={{
                                     backgroundImage: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})`,
                                 }}
@@ -90,12 +88,12 @@ export default function TrademarkHero({
                         </h1>
 
                         {/* subtitle (PT Sans) */}
-                        <p className="font-ptsans mt-4 max-w-2xl text-[15.5px] sm:text-[16.5px] leading-7 text-[#2b3852]/90">
+                        <p className="mt-4 max-w-2xl text-[15.5px] sm:text-[16.5px] leading-7 text-[#2b3852]/90 font-ptsans">
                             {subtitle}
                         </p>
 
                         {/* CTA buttons */}
-                        <div className="mt-7 flex flex-col gap-4">
+                        <div className="mt-7 flex flex-col gap-4 font-ptsans">
                             <Link
                                 href={ctaHref}
                                 className="w-full sm:w-fit rounded-2xl bg-gradient-to-r from-[#7F2B38] to-[#4D1475] px-8 py-3 text-[15px] font-semibold text-white transition hover:opacity-90 text-center"
@@ -107,7 +105,7 @@ export default function TrademarkHero({
                                 {["Pre-clearance Search", "Filing in 180+ Countries", "Opposition & Enforcement"].map((item, i) => (
                                     <span
                                         key={i}
-                                        className="font-ptsans rounded-full border border-gray-300 bg-white px-4 py-2 text-[13.5px] sm:text-sm text-gray-700"
+                                        className="rounded-full border border-gray-300 bg-white px-4 py-2 text-[13.5px] sm:text-sm text-gray-700 font-ptsans"
                                     >
                                         {item}
                                     </span>
@@ -155,7 +153,7 @@ function TrademarkIcon({ className = "" }: { className?: string }) {
                 x="188"
                 y="160"
                 textAnchor="middle"
-                fontFamily="Inter, system-ui, sans-serif"
+                fontFamily="var(--font-pt-sans), system-ui, sans-serif"
                 fontWeight="700"
                 fontSize="20"
                 fill="#4D1475"

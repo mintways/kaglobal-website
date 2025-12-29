@@ -1,4 +1,3 @@
-// components/sections/services/strategic-advisory/ApproachSection.tsx
 "use client";
 
 import { motion } from "framer-motion";

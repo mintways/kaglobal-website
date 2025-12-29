@@ -48,11 +48,7 @@ const Icon = ({ name }: { name: string }) => {
 
 export default function Metrics() {
     return (
-        <section className="relative w-full bg-white">
-            {/* soft brand glows */}
-            {/* <div className="pointer-events-none absolute -left-24 top-0 h-72 w-72 rounded-full bg-[#7F2B38]/10 blur-3xl" /> */}
-            {/* <div className="pointer-events-none absolute -right-24 bottom-0 h-96 w-96 rounded-full bg-[#4D1475]/10 blur-3xl" /> */}
-
+        <section className="relative w-full bg-white font-ptsans">
             <div className="relative mx-auto max-w-7xl px-6 py-14">
                 <div className="rounded-3xl border border-black/5 bg-[#F8F8F8] p-3 sm:p-4">
                     <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
@@ -72,14 +68,16 @@ export default function Metrics() {
                                 </div>
 
                                 {/* number */}
-                                <div className="relative z-10 text-2xl font-bold tracking-tight font-euclid">
+                                <div className="relative z-10 text-2xl font-bold tracking-tight font-playfair">
                                     <span className="bg-gradient-to-r from-[#7F2B38] to-[#4D1475] bg-clip-text text-transparent">
                                         {item.v}
                                     </span>
                                 </div>
 
                                 {/* label */}
-                                <div className="relative z-10 mt-1 text-sm text-gray-600 font-ptsans">{item.k}</div>
+                                <div className="relative z-10 mt-1 text-sm text-gray-600 font-ptsans">
+                                    {item.k}
+                                </div>
 
                                 {/* hover shimmer */}
                                 <span

@@ -1,10 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { Playfair_Display, PT_Sans } from "next/font/google";
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"] });
-const ptsans = PT_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
 const KA = {
     maroon: "#7F2B38",
@@ -36,7 +32,7 @@ export default function CopyrightIntegration() {
                     </div>
 
                     {/* Heading */}
-                    <h2 className={`${playfair.className} text-[clamp(2rem,3.8vw,2.8rem)] font-bold leading-tight text-[#1F2A44]`}>
+                    <h2 className="font-playfair text-[clamp(2rem,3.8vw,2.8rem)] font-bold leading-tight text-[#1F2A44]">
                         <span
                             className="bg-clip-text text-transparent"
                             style={{ backgroundImage: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})` }}
@@ -47,25 +43,23 @@ export default function CopyrightIntegration() {
                     </h2>
 
                     {/* Intro */}
-                    <p className={`${ptsans.className} mt-5 max-w-2xl text-[17px] leading-7 text-[#2B3852]/90`}>
-                        Connect all your intellectual property—copyrights, trademarks, patents, and designs—into one unified framework. Our approach ensures filings, renewals, and 
-                        enforcement are coordinated, giving your portfolio a consistent story and measurable business value.
+                    <p className="font-ptsans mt-5 max-w-2xl text-[17px] leading-7 text-[#2B3852]/90">
+                        Connect all your intellectual property—copyrights, trademarks, patents, and designs—into one unified
+                        framework. Our approach ensures filings, renewals, and enforcement are coordinated, giving your portfolio a
+                        consistent story and measurable business value.
                     </p>
 
                     {/* System chips */}
                     <div className="mt-6 flex flex-wrap gap-3">
                         {["Copyrights", "Trademarks", "Patents", "Designs"].map((t) => (
-                            <span
-                                key={t}
-                                className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700"
-                            >
+                            <span key={t} className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700">
                                 {t}
                             </span>
                         ))}
                     </div>
 
                     {/* Benefits */}
-                    <ul className={`${ptsans.className} mt-6 space-y-3 text-[15px] text-[#1F2A44]/90`}>
+                    <ul className="font-ptsans mt-6 space-y-3 text-[15px] text-[#1F2A44]/90">
                         {[
                             "Comprehensive oversight across all IP assets",
                             "Conflict detection and brand consistency across portfolios",
@@ -93,7 +87,7 @@ export default function CopyrightIntegration() {
                     </div>
                 </div>
 
-                {/* RIGHT: Integration icon (keeps same right-edge alignment as other sections) */}
+                {/* RIGHT */}
                 <div className="md:col-span-5 flex justify-end -mr-6 sm:-mr-10 lg:-mr-14">
                     <IntegrationIcon className="h-[360px] w-[360px]" />
                 </div>
@@ -105,7 +99,15 @@ export default function CopyrightIntegration() {
 /* ---------------- Integration Icon: center hub + linked badges (©, TM, Patent, Design) ---------------- */
 function IntegrationIcon({ className = "" }: { className?: string }) {
     return (
-        <svg className={className} viewBox="0 0 480 480" fill="none" strokeLinecap="round" strokeLinejoin="round" role="img" aria-label="Integrated IP icon">
+        <svg
+            className={className}
+            viewBox="0 0 480 480"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            role="img"
+            aria-label="Integrated IP icon"
+        >
             <defs>
                 <linearGradient id="ipGrad" x1="60" y1="60" x2="420" y2="420" gradientUnits="userSpaceOnUse">
                     <stop stopColor="#7F2B38" />
@@ -118,7 +120,9 @@ function IntegrationIcon({ className = "" }: { className?: string }) {
 
             {/* Center hub */}
             <circle cx="240" cy="240" r="56" stroke="url(#ipGrad)" strokeWidth="12" fill="white" />
-            <text x="240" y="250" textAnchor="middle" fontFamily="Inter, system-ui, Arial" fontSize="28" fontWeight="800" fill="#4D1475">IP</text>
+            <text x="240" y="250" textAnchor="middle" fontFamily="Inter, system-ui, Arial" fontSize="28" fontWeight="800" fill="#4D1475">
+                IP
+            </text>
 
             {/* Connectors */}
             {[
@@ -132,14 +136,24 @@ function IntegrationIcon({ className = "" }: { className?: string }) {
 
             {/* Top: © badge */}
             <circle cx="240" cy="110" r="40" stroke="url(#ipGrad)" strokeWidth="10" fill="white" />
-            <text x="240" y="120" textAnchor="middle" fontFamily="Inter, system-ui, Arial" fontSize="28" fontWeight="800" fill="#4D1475">©</text>
+            <text x="240" y="120" textAnchor="middle" fontFamily="Inter, system-ui, Arial" fontSize="28" fontWeight="800" fill="#4D1475">
+                ©
+            </text>
 
             {/* Right: TM badge */}
             <circle cx="370" cy="240" r="40" stroke="url(#ipGrad)" strokeWidth="10" fill="white" />
-            <text x="370" y="250" textAnchor="middle" fontFamily="Inter, system-ui, Arial" fontSize="24" fontWeight="800" fill="#4D1475">TM</text>
+            <text x="370" y="250" textAnchor="middle" fontFamily="Inter, system-ui, Arial" fontSize="24" fontWeight="800" fill="#4D1475">
+                TM
+            </text>
 
             {/* Bottom: Patent shield */}
-            <path d="M200 360l40-14 40 14v28c0 32-18 56-40 70-22-14-40-38-40-70v-28z" transform="translate(40,0)" stroke="url(#ipGrad)" strokeWidth="10" fill="white" />
+            <path
+                d="M200 360l40-14 40 14v28c0 32-18 56-40 70-22-14-40-38-40-70v-28z"
+                transform="translate(40,0)"
+                stroke="url(#ipGrad)"
+                strokeWidth="10"
+                fill="white"
+            />
 
             {/* Left: Design diamond */}
             <path d="M120 240l40-40 40 40-40 40-40-40z" stroke="url(#ipGrad)" strokeWidth="10" fill="white" />

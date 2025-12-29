@@ -11,7 +11,7 @@ const KA = {
 
 export default function DesignWhyUs() {
     return (
-        <section className="relative w-full bg-white overflow-hidden">
+        <section className="relative w-full bg-white overflow-hidden font-ptsans">
             {/* soft brand auras */}
             <div
                 aria-hidden
@@ -31,12 +31,12 @@ export default function DesignWhyUs() {
             <div className="relative mx-auto max-w-7xl px-6 py-16 sm:px-8 md:py-20">
                 {/* Eyebrow + Title + Subtitle */}
                 <div className="text-center">
-                    <span className="font-ptsans inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/90 px-3 py-1 text-[11px] font-semibold tracking-[0.22em] text-gray-600 backdrop-blur-sm">
+                    <span className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/90 px-3 py-1 text-[11px] font-semibold tracking-[0.22em] text-gray-600 backdrop-blur-sm font-ptsans">
                         <span className="h-2 w-2 rounded-full bg-ka-maroon" />
                         DESIGN
                     </span>
 
-                    <h2 className="font-euclid mt-3 text-[clamp(1.9rem,3.8vw,2.8rem)] leading-tight text-ka-ink">
+                    <h2 className="mt-3 font-playfair text-[clamp(1.9rem,3.8vw,2.8rem)] leading-tight text-ka-ink">
                         <span
                             className="bg-clip-text text-transparent"
                             style={{
@@ -48,7 +48,7 @@ export default function DesignWhyUs() {
                         for design protection
                     </h2>
 
-                    <p className="font-ptsans mx-auto mt-4 max-w-3xl text-[15.5px] sm:text-[16px] leading-relaxed text-[#2B3852]/90">
+                    <p className="mx-auto mt-4 max-w-3xl text-[15.5px] sm:text-[16px] leading-relaxed text-[#2B3852]/90 font-ptsans">
                         Expertly crafted services to protect your intellectual property worldwide.
                     </p>
                 </div>
@@ -57,17 +57,17 @@ export default function DesignWhyUs() {
                 <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:gap-7">
                     <FeatureCard
                         Icon={Zap}
-                        title={["Rapid, Affordable Protection"]}
+                        title={["Rapid, Affordable Protection", ""]}
                         desc="Secure your design rights efficiently."
                     />
                     <FeatureCard
                         Icon={Globe2}
-                        title={["Global Strategy, Local Execution"]}
+                        title={["Global Strategy, Local Execution", ""]}
                         desc="Comprehensive support across countries."
                     />
                     <FeatureCard
                         Icon={Asterisk}
-                        title={["Lifecycle Oversight "]}
+                        title={["Lifecycle Oversight", ""]}
                         desc="Complete management from initial filing to ongoing maintenance."
                     />
                 </div>
@@ -87,23 +87,31 @@ function FeatureCard({
     title: [string, string] | string[];
     desc: string;
 }) {
+    const hasSecondLine = Array.isArray(title) && Boolean(title[1]?.trim());
+
     return (
         <div className="group rounded-2xl bg-gradient-to-tr from-[#7F2B38]/30 via-transparent to-[#4D1475]/30 p-[1px] transition-colors hover:from-[#7F2B38]/55 hover:to-[#4D1475]/55">
             <div className="h-full rounded-2xl bg-white p-6 sm:p-7 text-center sm:text-left">
                 <IconBadge Icon={Icon} />
-                <h3 className="font-euclid mt-4 text-[20px] font-semibold leading-snug text-[#1F2A44]">
+
+                <h3 className="mt-4 font-playfair text-[20px] font-semibold leading-snug text-[#1F2A44]">
                     {Array.isArray(title) ? (
                         <>
-                            {title[0]} <br className="hidden sm:block" />
-                            {title[1]}
+                            {title[0]}
+                            {hasSecondLine ? (
+                                <>
+                                    {" "}
+                                    <br className="hidden sm:block" />
+                                    {title[1]}
+                                </>
+                            ) : null}
                         </>
                     ) : (
                         title
                     )}
                 </h3>
-                <p className="font-ptsans mt-2 text-[14.5px] leading-relaxed text-[#2B3852]/85">
-                    {desc}
-                </p>
+
+                <p className="mt-2 text-[14.5px] leading-relaxed text-[#2B3852]/85 font-ptsans">{desc}</p>
             </div>
         </div>
     );

@@ -1,5 +1,3 @@
-// -----------------------------------------------------------------------------
-// components/sections/services/strategic-advisory/CtaRibbon.tsx
 "use client";
 
 import Link from "next/link";

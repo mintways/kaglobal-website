@@ -1,5 +1,3 @@
-// -----------------------------------------------------------------------------
-// components/sections/services/litigation/CtaSection.tsx
 "use client";
 import * as React from "react";
 import Link from "next/link";
@@ -11,7 +9,7 @@ export default function CtaSection() {
                 <div className="relative rounded-2xl bg-gradient-to-r from-[#4B2E83] via-[#5b3aa0] to-[#6E44AB] p-6 ring-1 ring-white/15 text-white shadow-xl">
                     <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
                         <div>
-                            <h3 className="font-euclid text-xl font-semibold md:text-2xl leading-snug">
+                            <h3 className="font-playfair text-xl font-semibold md:text-2xl leading-snug">
                                 Your Rights, Protected. Your Innovations, Enforced.
                             </h3>
                             <p className="mt-1 font-ptsans text-[15.5px] text-white/85">

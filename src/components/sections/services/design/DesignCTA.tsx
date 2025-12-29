@@ -17,8 +17,8 @@ export default function CTASection({
 }: Props) {
     return (
         <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-20 lg:px-8">
-            <div className="rounded-[2.5rem] bg-gradient-to-b from-[#4A0D4D] to-[#7C1E2F] px-6 py-14 text-center text-white sm:px-10 md:py-18 lg:px-20">
-                <h2 className="font-euclid text-[clamp(1.9rem,3.5vw,3rem)] font-semibold leading-tight">
+            <div className="rounded-[2.5rem] bg-gradient-to-b from-[#4A0D4D] to-[#7C1E2F] px-6 py-14 text-center sm:px-10 md:py-18 lg:px-20">
+                <h2 className="font-playfair text-[clamp(1.9rem,3.5vw,3rem)] text-white font-semibold leading-tight">
                     {heading}
                 </h2>
 

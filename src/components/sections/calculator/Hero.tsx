@@ -1,11 +1,7 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
-import { Playfair_Display, PT_Sans } from "next/font/google";
 import { UploadCloud, PieChart, Search, PiggyBank, Lightbulb } from "lucide-react";
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"] });
-const ptsans = PT_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
 const inputBase =
     "w-full rounded-xl border border-[#D0D5DD] bg-[#F9FAFB] px-4 py-3 text-[15px] text-[#0B1320] placeholder:text-[#98A2B3] focus:outline-none focus:ring-2 focus:ring-[#900C3F] focus:border-[#900C3F]";
@@ -24,11 +20,11 @@ function Field({
     return (
         <label className="block">
             <div className="mb-1.5 flex items-center gap-1.5">
-                <span className={`${ptsans.className} text-sm font-medium text-[#101828]`}>{label}</span>
+                <span className="font-ptsans text-sm font-medium text-[#101828]">{label}</span>
                 {required && <span className="text-[#E11D48]">*</span>}
             </div>
             <div className="relative">{children}</div>
-            {hint && <p className={`${ptsans.className} mt-1 text-xs text-[#667085]`}>{hint}</p>}
+            {hint && <p className="font-ptsans mt-1 text-xs text-[#667085]">{hint}</p>}
         </label>
     );
 }
@@ -37,7 +33,7 @@ export default function CalculatorPage() {
     const fileInputRef = useRef<HTMLInputElement | null>(null);
     const [dragOver, setDragOver] = useState(false);
     const [email, setEmail] = useState("");
-    const [fileName, setFileName] = useState<string | null>(null); // ✅ NEW
+    const [fileName, setFileName] = useState<string | null>(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [msg, setMsg] = useState<string | null>(null);
 
@@ -47,7 +43,7 @@ export default function CalculatorPage() {
         const files = e.dataTransfer.files;
         if (files?.length && fileInputRef.current) {
             fileInputRef.current.files = files;
-            setFileName(files[0].name); // ✅ show filename when dropped
+            setFileName(files[0].name);
         }
     }, []);
 
@@ -62,7 +58,6 @@ export default function CalculatorPage() {
             setMsg("Please enter email.");
             return;
         }
-
         if (!file) {
             setMsg("Please upload a file.");
             return;
@@ -78,11 +73,10 @@ export default function CalculatorPage() {
                 method: "POST",
                 body: formData,
             });
-
             if (!res.ok) throw new Error("Failed to send");
 
             setMsg("Uploaded and sent to KA Global IP. You will get the estimate.");
-            setFileName(null); // reset filename
+            setFileName(null);
             if (fileInputRef.current) fileInputRef.current.value = "";
         } catch {
             setMsg("Something went wrong. Please try again.");
@@ -96,18 +90,18 @@ export default function CalculatorPage() {
             <section className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-6 py-12 md:grid-cols-12 md:gap-16 md:py-16">
                 {/* LEFT COLUMN */}
                 <div className="md:col-span-6">
-                    <h1 className={`${playfair.className} text-4xl leading-tight text-[#0B1320] md:text-5xl`}>
-                        <span className="bg-gradient-to-r from-[#900C3F] to-[#0B1320] bg-clip-text font-bold text-transparent">
+                    <h1 className="text-4xl leading-tight text-[#0B1320] md:text-5xl">
+                        <span className="font-playfair bg-gradient-to-r from-[#900C3F] to-[#0B1320] bg-clip-text font-bold text-transparent">
                             Free
                         </span>{" "}
                         IP Renewal Cost Calculator
                     </h1>
 
-                    <p className={`${ptsans.className} mt-6 text-[17px] leading-7 text-[#334155]`}>
+                    <p className="font-ptsans mt-6 text-[17px] leading-7 text-[#334155]">
                         Get a clear, accurate view of patent renewal costs and benchmark your current spend—powered by
                         KA&nbsp;Global&nbsp;IP’s global annuity expertise.
                     </p>
-                    <p className={`${ptsans.className} mt-3 text-[17px] leading-7 text-[#334155]`}>
+                    <p className="font-ptsans mt-3 text-[17px] leading-7 text-[#334155]">
                         Works for any portfolio size, in any jurisdiction.
                     </p>
 
@@ -122,7 +116,7 @@ export default function CalculatorPage() {
                                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#C4B5FD] to-[#A78BFA]">
                                     <Icon className="h-4 w-4 text-white" strokeWidth={2} />
                                 </span>
-                                <p className={`${ptsans.className} text-[16px] font-semibold leading-6 text-[#0B1320]`}>{text}</p>
+                                <p className="font-ptsans text-[16px] font-semibold leading-6 text-[#0B1320]">{text}</p>
                             </li>
                         ))}
                     </ul>
@@ -131,7 +125,7 @@ export default function CalculatorPage() {
                 {/* RIGHT COLUMN */}
                 <div className="md:col-span-6">
                     <div className="rounded-2xl border border-[#E5E7EB] bg-white p-6 shadow-sm">
-                        <h2 className={`${ptsans.className} mb-4 text-lg font-semibold text-[#0B1320]`}>
+                        <h2 className="font-ptsans mb-4 text-lg font-semibold text-[#0B1320]">
                             Upload for Multiple Estimates
                         </h2>
 
@@ -148,7 +142,7 @@ export default function CalculatorPage() {
                                 />
                             </Field>
 
-                            <p className={`${ptsans.className} -mt-2 text-sm text-[#6B7280]`}>
+                            <p className="font-ptsans -mt-2 text-sm text-[#6B7280]">
                                 We will send the calculated renewal estimates to this email.
                             </p>
 
@@ -164,7 +158,7 @@ export default function CalculatorPage() {
                                     }`}
                             >
                                 <UploadCloud className="mx-auto h-10 w-10 text-[#9CA3AF]" />
-                                <p className={`${ptsans.className} mt-3 text-[#6B7280]`}>
+                                <p className="font-ptsans mt-3 text-[#6B7280]">
                                     Drag file here or{" "}
                                     <button
                                         type="button"
@@ -174,9 +168,8 @@ export default function CalculatorPage() {
                                         upload
                                     </button>
                                 </p>
-                                <p className={`${ptsans.className} mt-1 text-xs text-[#94A3B8]`}>
-                                    Accepted: .csv, .xlsx, .xls
-                                </p>
+                                <p className="font-ptsans mt-1 text-xs text-[#94A3B8]">Accepted: .csv, .xlsx, .xls</p>
+
                                 <input
                                     ref={fileInputRef}
                                     type="file"
@@ -184,12 +177,12 @@ export default function CalculatorPage() {
                                     className="hidden"
                                     onChange={(e) => {
                                         const file = e.target.files?.[0];
-                                        setFileName(file ? file.name : null); // ✅ show filename when selected
+                                        setFileName(file ? file.name : null);
                                     }}
                                 />
-                                {/* ✅ Show uploaded filename */}
+
                                 {fileName && (
-                                    <p className={`${ptsans.className} mt-4 text-sm font-medium text-[#0B1320]`}>
+                                    <p className="font-ptsans mt-4 text-sm font-medium text-[#0B1320]">
                                         Uploaded file: <span className="text-[#900C3F]">{fileName}</span>
                                     </p>
                                 )}
@@ -205,7 +198,7 @@ export default function CalculatorPage() {
                                 </button>
                             </div>
 
-                            {msg && <p className={`${ptsans.className} text-sm text-[#0F172A]`}>{msg}</p>}
+                            {msg && <p className="font-ptsans text-sm text-[#0F172A]">{msg}</p>}
                         </form>
                     </div>
                 </div>

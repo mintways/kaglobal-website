@@ -18,7 +18,7 @@ export default function CTASection({
     return (
         <section className="mx-auto max-w-7xl px-4 py-14 xs:px-5 sm:px-6 md:px-8 md:py-20">
             <div className="rounded-[2.25rem] sm:rounded-[3rem] bg-gradient-to-b from-[#4A0D4D] to-[#7C1E2F] px-5 sm:px-6 lg:px-20 py-12 sm:py-16 md:py-20 text-center text-white">
-                <h2 className="font-euclid font-bold leading-tight text-[clamp(1.6rem,4.5vw,3rem)] md:text-[clamp(2rem,3.6vw,3.5rem)]">
+                <h2 className="font-playfair text-white font-bold leading-tight text-[clamp(1.6rem,4.5vw,3rem)] md:text-[clamp(2rem,3.6vw,3.5rem)]">
                     {heading}
                 </h2>
 

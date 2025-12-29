@@ -1,17 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { Playfair_Display, PT_Sans } from "next/font/google";
-import copyrightupdates from "@/../public/images/services/copyright/transparent-copyright-management.png"
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"] });
-const ptsans = PT_Sans({ subsets: ["latin"], weight: ["400", "700"] });
+import copyrightupdates from "@/../public/images/services/copyright/transparent-copyright-management.png";
 
 const KA = {
     maroon: "#7F2B38",
     purple: "#4D1475",
-    text: "#1F2A44",
-    muted: "#2B3852",
 };
 
 export default function CopyrightUpdates() {
@@ -29,14 +23,14 @@ export default function CopyrightUpdates() {
                 style={{ background: `radial-gradient(circle at center, ${KA.maroon}33, transparent 70%)` }}
             />
 
-            <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-20 grid grid-cols-1 gap-12 md:grid-cols-12 items-center">
+            <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 py-16 md:grid-cols-12 md:py-20">
                 {/* LEFT: visual */}
                 <div className="md:col-span-7 flex justify-start -ml-2 sm:-ml-6 lg:-ml-10">
                     <div className="rounded-2xl bg-gradient-to-tr from-[#7F2B38] via-transparent to-[#4D1475] p-[1px]">
                         <div className="relative overflow-hidden rounded-2xl bg-white shadow-[0_10px_30px_rgba(11,19,32,0.08)] ring-1 ring-black/5">
                             <Image
                                 src={copyrightupdates}
-                                alt="Transaprent copyright management"
+                                alt="Transparent copyright management"
                                 width={560}
                                 height={420}
                                 sizes="(max-width: 768px) 100vw, 40vw"
@@ -56,14 +50,10 @@ export default function CopyrightUpdates() {
                     </div>
 
                     {/* Heading */}
-                    <h2
-                        className={`${playfair.className} text-[clamp(2rem,3.8vw,2.8rem)] font-bold leading-tight text-[${KA.text}]`}
-                    >
+                    <h2 className="text-[clamp(2rem,3.8vw,2.8rem)] font-bold leading-tight text-ka-ink">
                         <span
-                            className="bg-clip-text text-transparent"
-                            style={{
-                                backgroundImage: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})`,
-                            }}
+                            className="font-playfair bg-clip-text text-transparent"
+                            style={{ backgroundImage: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})` }}
                         >
                             Transparent
                         </span>{" "}
@@ -71,9 +61,10 @@ export default function CopyrightUpdates() {
                     </h2>
 
                     {/* Intro paragraph */}
-                    <p className={`${ptsans.className} mt-5 max-w-xl text-[17px] leading-7 text-[#2B3852]/90`}>
-                        Stay ahead with real-time updates on filings, renewals, and enforcement, Actionable insights via dashboards, 
-                        analytics, and monthly summaries and Automated alerts and milestone notifications to keep your portfolio on track.
+                    <p className="font-ptsans mt-5 max-w-xl text-[17px] leading-7 text-[#2B3852]/90">
+                        Stay ahead with real-time updates on filings, renewals, and enforcement. Actionable insights via dashboards,
+                        analytics, and monthly summaries, plus automated alerts and milestone notifications to keep your portfolio on
+                        track.
                     </p>
 
                     {/* Chips */}
@@ -84,17 +75,14 @@ export default function CopyrightUpdates() {
                             "Portfolio analytics reports",
                             "Monthly compliance summaries",
                         ].map((t) => (
-                            <span
-                                key={t}
-                                className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700"
-                            >
+                            <span key={t} className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700">
                                 {t}
                             </span>
                         ))}
                     </div>
 
                     {/* Bullet points */}
-                    <ul className={`${ptsans.className} mt-6 space-y-3 text-[15px] text-[#1F2A44]/90`}>
+                    <ul className="font-ptsans mt-6 space-y-3 text-[15px] text-[#1F2A44]/90">
                         {[
                             "Live monitoring for application & renewal statuses",
                             "Automated milestone notifications across jurisdictions",
@@ -103,9 +91,7 @@ export default function CopyrightUpdates() {
                             <li key={i} className="flex items-start gap-3">
                                 <span
                                     className="mt-[6px] inline-block h-2.5 w-2.5 rounded-full"
-                                    style={{
-                                        background: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})`,
-                                    }}
+                                    style={{ background: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})` }}
                                 />
                                 <span>{text}</span>
                             </li>

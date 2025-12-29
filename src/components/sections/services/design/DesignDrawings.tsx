@@ -28,9 +28,9 @@ export default function DesignDrawings() {
                         DRAWINGS
                     </div>
 
-                    <h2 className="font-euclid text-[clamp(1.9rem,3.8vw,2.6rem)] leading-tight text-ka-ink">
+                    <h2 className="text-[clamp(1.9rem,3.8vw,2.6rem)] leading-tight text-ka-ink">
                         <span
-                            className="bg-clip-text text-transparent"
+                            className="font-playfair bg-clip-text text-transparent"
                             style={{ backgroundImage: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})` }}
                         >
                             Compliant

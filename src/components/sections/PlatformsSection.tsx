@@ -11,18 +11,18 @@ type Platform = {
 
 const platforms: Platform[] = [
     {
-        title: "Attorney-Supervised ™ and Design Filing Platform",
+        title: "Attorney-Supervised Trademark and Design Filing Platform",
         description:
             "File trademark and design applications seamlessly in key markets—including India, EUIPO, and China—all from one unified platform that integrates advanced technology with expert legal oversight",
         action: "Protect →",
-        href: "#",
+        href: "https://file.kaglobalip.com/",
     },
     {
         title: "IP Renewal and Recordal Application Management",
         description:
             "Beyond simple reminders—this is a comprehensive portfolio engine engineered to optimize renewals and recordals for maximum protection, efficiency, and cost management.",
         action: "Renew →",
-        href: "#",
+        href: "https://annuity.kaglobalip.com/",
     },
 ];
 

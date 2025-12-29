@@ -11,8 +11,10 @@ const KA = {
 
 export default function Hero() {
     return (
-        <Section className="relative overflow-hidden bg-white text-[#2D2F33] font-ptsans"
-        style={{ background: "linear-gradient(180deg, #F6F7F9 0%, #FFFFFF 70%)" }}>
+        <Section
+            className="relative overflow-hidden bg-white text-[#2D2F33] font-ptsans"
+            style={{ background: "linear-gradient(180deg, #F6F7F9 0%, #FFFFFF 70%)" }}
+        >
             {/* --- decorative grid & auras --- */}
             <div aria-hidden className="pointer-events-none absolute inset-0 z-0">
                 <div
@@ -34,6 +36,7 @@ export default function Hero() {
                     }}
                 />
             </div>
+
             {/* Subtle grid background */}
             <div
                 aria-hidden
@@ -42,23 +45,23 @@ export default function Hero() {
 
             <div className="relative mx-auto max-w-7xl px-6 py-8 sm:py-10 md:py-12">
                 {/* badge */}
-                <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/85 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-700 backdrop-blur-sm font-euclid">
+                <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/85 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-gray-700 backdrop-blur-sm font-ptsans">
                     <span className="h-1.5 w-1.5 rounded-full bg-[#7F2B38]" />
                     About Us • Global Reach
                 </div>
 
                 {/* headline */}
-                <h1 className="mt-2 font-euclid text-2xl leading-tight text-[#1F1F22] sm:text-3xl md:text-4xl">
+                <h1 className="mt-2 font-playfair text-2xl leading-tight text-[#1F1F22] sm:text-3xl md:text-4xl">
                     <span className="bg-gradient-to-r from-[#7F2B38] to-[#4D1475] bg-clip-text text-transparent">
                         Global Reach, Local Expertise
                     </span>
                 </h1>
 
                 {/* description */}
-                <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[#444] sm:text-base md:text-lg">
-                    At <strong>KA Global IP</strong>, we partner with innovators and enterprises to protect, scale, 
-                    and monetize intellectual property across more than <strong>100+ countries</strong>. With 
-                    strategic hubs in India and the United States, complemented by a trusted worldwide network, 
+                <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[#444] sm:text-base md:text-lg font-ptsans">
+                    At <strong>KA Global IP</strong>, we partner with innovators and enterprises to protect, scale,
+                    and monetize intellectual property across more than <strong>100+ countries</strong>. With
+                    strategic hubs in India and the United States, complemented by a trusted worldwide network,
                     we seamlessly merge local insight with international best practices to deliver truly borderless IP solutions.
                 </p>
 
@@ -66,13 +69,13 @@ export default function Hero() {
                 <div className="mt-5 flex flex-wrap gap-3">
                     <a
                         href="/contact"
-                        className="rounded-2xl bg-[#7F2B38] px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#7F2B38]/90"
+                        className="rounded-2xl bg-[#7F2B38] px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-[#7F2B38]/90 font-ptsans"
                     >
                         Connect with us
                     </a>
                     <a
                         href="/about/global"
-                        className="rounded-2xl border border-[#4D1475] px-5 py-2 text-sm font-semibold text-[#4D1475] transition hover:-translate-y-0.5 hover:bg-[#4D1475] hover:text-white"
+                        className="rounded-2xl border border-[#4D1475] px-5 py-2 text-sm font-semibold text-[#4D1475] transition hover:-translate-y-0.5 hover:bg-[#4D1475] hover:text-white font-ptsans"
                     >
                         Explore global reach
                     </a>

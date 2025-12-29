@@ -48,7 +48,7 @@ export default function HighlightsModern({
     eyebrow = "Why KA Global IP",
     heading = "Global Reach: Protecting Innovations across 90+ countries worldwide",
     subheading = "Seamless, compliant IP-portfolio management — from beginning to end, with speed and precision",
-    cardCta = "Learn more",
+    cardCta = "Explore more",
     items = [
         {
             icon: <Share2 className="h-6 w-6 sm:h-7 sm:w-7" />,
@@ -81,7 +81,7 @@ export default function HighlightsModern({
 
                     <h2 className="mt-3 sm:mt-4 leading-tight text-[clamp(1.6rem,4.5vw,2.8rem)]">
                         <span
-                            className="bg-clip-text text-transparent"
+                            className="font-playfair bg-clip-text text-transparent"
                             style={{ backgroundImage: `linear-gradient(90deg, ${COLOR.maroon}, ${COLOR.purple})` }}
                         >
                             Global Reach
@@ -90,7 +90,7 @@ export default function HighlightsModern({
                     </h2>
 
                     {subheading && (
-                        <p className="mx-auto mt-3 sm:mt-4 max-w-3xl text-[15.5px] sm:text-base md:text-lg leading-7 text-[#475467]">
+                        <p className="font-ptsans mx-auto mt-3 sm:mt-4 max-w-3xl text-[15.5px] sm:text-base md:text-lg leading-7 text-[#475467]">
                             {subheading}
                         </p>
                     )}
@@ -123,11 +123,11 @@ export default function HighlightsModern({
                                     {it.icon}
                                 </div>
 
-                                <h3 className="whitespace-pre-line text-[20px] sm:text-[22px] md:text-[26px] leading-[1.18]">
+                                <h3 className="font-playfair whitespace-pre-line text-[20px] sm:text-[22px] md:text-[26px] leading-[1.18]">
                                     {it.title}
                                 </h3>
 
-                                <p className="mt-2.5 sm:mt-3 text-[14.5px] sm:text-[15px] leading-7 text-[#475467]">
+                                <p className="font-ptsans mt-2.5 sm:mt-3 text-[14.5px] sm:text-[15px] leading-7 text-[#475467]">
                                     {it.text}
                                 </p>
 

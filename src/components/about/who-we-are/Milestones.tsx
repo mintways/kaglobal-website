@@ -23,8 +23,8 @@ export default function Milestones() {
             <div className="relative mx-auto max-w-7xl px-6 py-16 md:py-20">
                 {/* header */}
                 <div>
-                    <h2 className="text-3xl font-euclid font-semibold leading-tight md:text-4xl">
-                        <span className="bg-gradient-to-r from-[#7F2B38] to-[#4D1475] bg-clip-text text-transparent">
+                    <h2 className="text-3xl font-semibold leading-tight md:text-4xl">
+                        <span className="font-playfair bg-gradient-to-r from-[#7F2B38] to-[#4D1475] bg-clip-text text-transparent">
                             Our Journey
                         </span>
                     </h2>
@@ -44,10 +44,10 @@ export default function Milestones() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-80px" }}
                                 transition={{ duration: 0.45, ease: [0.22, 0.61, 0.36, 1] }}
-                                className="relative rounded-3xl border border-black/10 bg-white p-6 shadow-[0_6px_20px_rgba(0,0,0,0.06)]"
+                                className="relative rounded-3xl border border-black/10 bg-white p-6 shadow-[0_6px_20px_rgba(0,0,0,0.06)] font-ptsans"
                             >
-                                <div className="text-sm font-euclid font-semibold text-[#7F2B38]">{m.y}</div>
-                                <p className="mt-1 text-[#1F2A44]/90">{m.e}</p>
+                                <div className="font-playfair text-sm font-semibold text-[#7F2B38]">{m.y}</div>
+                                <p className="mt-1 text-[#1F2A44]/90 font-ptsans">{m.e}</p>
 
                                 {/* connector dot pinned to spine center (only on md+) */}
                                 <span

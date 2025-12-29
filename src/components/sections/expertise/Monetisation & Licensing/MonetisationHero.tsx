@@ -1,4 +1,3 @@
-// components/sections/monetisation/MonetisationHero.tsx
 "use client";
 import * as React from "react";
 import { motion } from "framer-motion";

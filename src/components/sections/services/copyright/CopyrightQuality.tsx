@@ -1,11 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Playfair_Display, PT_Sans } from "next/font/google";
-import copyrightquality from "@/../public/images/services/copyright/quality.png"
-
-const playfair = Playfair_Display({ subsets: ["latin"], weight: ["400", "700"] });
-const ptsans = PT_Sans({ subsets: ["latin"], weight: ["400", "700"] });
+import copyrightquality from "@/../public/images/services/copyright/quality.png";
 
 const KA = {
     maroon: "#7F2B38",
@@ -39,43 +35,32 @@ export default function CopyrightQuality() {
                     </div>
 
                     {/* heading */}
-                    <h2
-                        className={`${playfair.className} text-[clamp(2rem,3.8vw,2.8rem)] font-bold leading-tight text-[${KA.text}]`}
-                    >
+                    <h2 className="text-[clamp(2rem,3.8vw,2.8rem)] font-bold leading-tight text-[#1F2A44]">
                         <span
-                            className="bg-clip-text text-transparent"
+                            className="font-playfair bg-clip-text text-transparent"
                             style={{ backgroundImage: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})` }}
                         >
                             Precision is Every Filing
-                        </span>{" "}
+                        </span>
                     </h2>
 
                     {/* intro */}
-                    <p
-                        className={`${ptsans.className} mt-5 max-w-2xl text-[17px] leading-7 text-[#2B3852]/90`}
-                    >
-                        From filing to grant ensure every submission meets authority standards, from documentation to recordals, minimizing delays and objections.
+                    <p className="font-ptsans mt-5 max-w-2xl text-[17px] leading-7 text-[#2B3852]/90">
+                        From filing to grant, we ensure every submission meets authority standards—from documentation to recordals—minimizing
+                        delays and objections.
                     </p>
 
                     {/* capability chips */}
                     <div className="mt-6 flex flex-wrap gap-3">
-                        {[
-                            "4-eye review workflow",
-                            "Authority-specific QC",
-                            "Chain-of-title checks",
-                            "Audit trail & proofs",
-                        ].map((t) => (
-                            <span
-                                key={t}
-                                className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700"
-                            >
+                        {["4-eye review workflow", "Authority-specific QC", "Chain-of-title checks", "Audit trail & proofs"].map((t) => (
+                            <span key={t} className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-700">
                                 {t}
                             </span>
                         ))}
                     </div>
 
                     {/* bullets */}
-                    <ul className={`${ptsans.className} mt-6 space-y-3 text-[15px] text-[#1F2A44]/90`}>
+                    <ul className="font-ptsans mt-6 space-y-3 text-[15px] text-[#1F2A44]/90">
                         {[
                             "Comprehensive screening & eligibility review",
                             "Evidence, specimen, and metadata preparation",
@@ -93,7 +78,7 @@ export default function CopyrightQuality() {
                     </ul>
                 </div>
 
-                {/* RIGHT: visual with gradient hairline frame, aligned to right edge */}
+                {/* RIGHT: visual */}
                 <div className="md:col-span-5 flex justify-end -mr-6 sm:-mr-10 lg:-mr-14">
                     <div className="rounded-2xl bg-gradient-to-tr from-[#7F2B38] via-transparent to-[#4D1475] p-[1px]">
                         <div className="relative overflow-hidden rounded-2xl bg-white">

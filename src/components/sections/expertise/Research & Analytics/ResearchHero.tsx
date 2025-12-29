@@ -1,4 +1,3 @@
-// components/sections/services/research/ResearchHero.tsx
 "use client";
 import * as React from "react";
 import { motion } from "framer-motion";
