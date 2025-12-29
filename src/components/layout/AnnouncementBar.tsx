@@ -53,7 +53,7 @@ export default function AnnouncementBar() {
               <Linkedin className="h-4 w-4" aria-hidden />
             </ExternalIconLink>
 
-            <ExternalIconLink href="#" label="X (Twitter)" pill>
+            <ExternalIconLink href="https://x.com/ipfiling" label="X (Twitter)" pill>
               <XIcon className="h-3.5 w-3.5" aria-hidden />
             </ExternalIconLink>
 
