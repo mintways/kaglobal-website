@@ -47,7 +47,7 @@ export default function AnnouncementBar() {
 
             {/* External links should be <a>, not Next <Link> */}
             <ExternalIconLink
-              href="#"
+              href="https://www.linkedin.com/company/kaglobalip/"
               label="LinkedIn"
             >
               <Linkedin className="h-4 w-4" aria-hidden />
