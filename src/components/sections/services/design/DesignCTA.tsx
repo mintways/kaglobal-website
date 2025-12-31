@@ -10,8 +10,8 @@ type Props = {
 };
 
 export default function CTASection({
-    heading = "Ready to protect your design?",
-    // text = "Schedule a consultation with our experts to develop a comprehensive design protection strategy",
+    heading = "Protect Your Innovation Today",
+    text = "Partner with KA Global IP for Expert Design Rights Management",
     buttonText = "Schedule a Consultation",
     buttonHref = "/contact",
 }: Props) {
@@ -22,9 +22,9 @@ export default function CTASection({
                     {heading}
                 </h2>
 
-                {/* <p className="font-ptsans mx-auto mt-5 max-w-2xl text-[15.5px] sm:text-[16.5px] leading-relaxed text-white/90">
+                <p className="font-ptsans mx-auto mt-5 max-w-2xl text-[15.5px] sm:text-[16.5px] leading-relaxed text-white/90">
                     {text}
-                </p> */}
+                </p>
 
                 <div className="mt-8 sm:mt-10">
                     <Link

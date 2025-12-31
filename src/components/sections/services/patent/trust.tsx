@@ -53,13 +53,13 @@ const card: Variants = {
 };
 
 export default function TrustSection({
-    kicker = "Trust",
-    heading = "Recognized by Leading Industry Bodies",
-    body = "KA Global IP is honoured to feature in esteemed rankings such as IP Stars, IAM, IBLJ, WTR and Forbes India—a testimony to our unwavering commitment to excellence in intellectual-property management.",
+    kicker = "A Legacy of Excellence and Trust",
+    heading = "Recognized by Global Authorities in Intellectual Property",
+    body = "KA Global IP is honored to be consistently featured in the world’s most prestigious intellectual property rankings. These accolades from IP STARS, IAM, IBLJ, WTR, and Forbes India serve as a testament to our unwavering commitment to excellence and our sophisticated approach to global IP management.",
     bullets = [
-        { icon: <Award className="h-5 w-5" />, title: "Our Esteemed Recognitions", text: "Honors from top global IP directories and business journals." },
-        { icon: <CheckCircle2 className="h-5 w-5" />, title: "Why Clients Trust Us", text: "Proven delivery, ISO-grade processes, and transparent reporting." },
-        { icon: <Handshake className="h-5 w-5" />, title: "Partner with Confidence", text: "Strategic guidance, measurable outcomes, and responsive support." },
+        { icon: <Award className="h-5 w-5" />, title: "Distinguished Global Recognitions", text: "Our firm is regularly evaluated and honored by top-tier global IP directories and leading business journals, reflecting our standing as a premier legal partner in the international arena." },
+        { icon: <CheckCircle2 className="h-5 w-5" />, title: "Why Global Leaders Choose Us", text: "Trust is built on performance. We deliver through ISO-grade operational processes, a proven track record of successful asset protection, and a culture of absolute transparency in reporting." },
+        { icon: <Handshake className="h-5 w-5" />, title: "Partner with Strategic Confidence", text: "We provide more than just legal filings; we offer strategic guidance, measurable business outcomes, and high-touch, responsive support that ensures your portfolio remains a competitive advantage." },
     ],
     badges = ["IP STARS", "IAM", "IBLJ", "WTR", "Forbes India"],
 }: Props) {

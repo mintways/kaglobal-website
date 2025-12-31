@@ -45,25 +45,25 @@ const card: Variants = {
 };
 
 export default function HighlightsModern({
-    eyebrow = "Why KA Global IP",
-    heading = "Global Reach: Protecting Innovations across 90+ countries worldwide",
-    subheading = "Seamless, compliant IP-portfolio management — from beginning to end, with speed and precision",
+    eyebrow = "Why Partner with KA Global IP",
+    heading = "Global Reach. Strategic Precision. Seamless Compliance.",
+    subheading = "Protecting innovation requires more than just filing; it requires a unified global infrastructure. KA Global IP secures your advancements across more than 90 countries through a seamless, end-to-end management framework defined by speed and technical accuracy.",
     cardCta = "Explore more",
     items = [
         {
             icon: <Share2 className="h-6 w-6 sm:h-7 sm:w-7" />,
-            title: "Comprehensive Patent Protection Solutions\nTailored to your needs",
-            text: "Our expertise ensures your patents are safeguarded globally with precision.",
+            title: "Bespoke Global Patent Solutions",
+            text: "We deliver comprehensive protection strategies tailored to your specific industry requirements. Our technical expertise ensures that your patent assets are safeguarded with the highest degree of precision across diverse regulatory landscapes.",
         },
         {
             icon: <Layers className="h-6 w-6 sm:h-7 sm:w-7" />,
-            title: "Expert Portfolio\nManagement for\nSustained growth and\nCompliance",
-            text: "We manage large, complex portfolios, ensuring timely renewals and compliance.",
+            title: "Expert Portfolio Governance & Scalability",
+            text: "Specializing in the management of large-scale, complex portfolios, we ensure sustained growth and absolute compliance. From strategic oversight to automated renewal cycles, we provide the infrastructure necessary for long-term asset viability.",
         },
         {
             icon: <Factory className="h-6 w-6 sm:h-7 sm:w-7" />,
-            title: "Trusted By Innovators:\nRecognized by Leading\nIndustry Authorities",
-            text: "Join the rank of esteemed clients recognized by IP Stars and Forbes.",
+            title: "A Legacy of Trust and Excellence",
+            text: "Join a distinguished roster of global innovators. Our firm’s commitment to excellence is consistently recognized by leading industry authorities, including IP STARS and Forbes, reflecting our standing as a premier partner in intellectual property.",
         },
     ],
 }: Props) {

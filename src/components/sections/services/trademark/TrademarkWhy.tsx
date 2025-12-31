@@ -23,7 +23,8 @@ export default function TrademarkWhy({
     imageSrc,
     imageAlt = "Trademark Illustration",
     title = "Why Trademark Protection Is a Legal Necessity",
-    body = `Your trademark is one of your most valuable assets. Protecting it prevents infringement and ensures exclusive rights to your brand identity. Our comprehensive services We make it simple to secure your brand and maintain your edge.`,
+    body = `Your trademark is a critical business asset. Legally protecting it is essential to prevent infringement, ensure exclusive rights to your brand identity, and maintain your competitive edge in the marketplace. 
+    KA Global IP streamlines the entire protection process, offering comprehensive services that make it simple to secure your brand globally.`,
     ctaHref = "#",
     ctaLabel = "Explore",
 }: Props) {

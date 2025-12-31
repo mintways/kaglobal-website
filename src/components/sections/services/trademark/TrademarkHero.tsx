@@ -17,10 +17,10 @@ type Props = {
 };
 
 export default function TrademarkHero({
-    title = "Register and Protect Your Brand Worldwide",
-    subtitle = "Ensure your brand’s legal security worldwide. Our experts manage and protect your trademarks with precision across international markets",
-    ctaLabel = "Apply for Trademark",
-    ctaHref = "/contact",
+    title = "Global Strategy for Enduring Brand Identity",
+    subtitle = "Protect your brand’s integrity across international borders. KA Global IP provides precision-driven trademark management, from initial availability assessments to robust enforcement, ensuring your identity remains legally secure in a competitive global market.",
+    ctaLabel = "Initiate Trademark Application",
+    ctaHref = "https://file.kaglobalip.com/",
 }: Props) {
     const [first, ...rest] = title.split(" ");
     const tail = rest.join(" ");
@@ -102,7 +102,7 @@ export default function TrademarkHero({
                             </Link>
 
                             <div className="flex flex-wrap gap-3">
-                                {["Pre-clearance Search", "Filing in 180+ Countries", "Opposition & Enforcement"].map((item, i) => (
+                                {["Comprehensive Pre-clearance", "Global Filing Strategy", "Opposition & Enforcement"].map((item, i) => (
                                     <span
                                         key={i}
                                         className="rounded-full border border-gray-300 bg-white px-4 py-2 text-[13.5px] sm:text-sm text-gray-700 font-ptsans"

@@ -81,19 +81,18 @@ function PatentIcon() {
 
 export default function Hero({
     kicker = "Patents",
-    title = "Safeguarding Your Innovations Worldwide",
-    description = "At KA Global IP, we streamline the complexities of international patent protection and portfolio management. With our broad expertise and global infrastructure, you can rely on us to safeguard your intellectual property wherever you operate.",
-    ctaText = "Connect",
+    title = "Safeguarding Innovation Across International Frontiers",
+    description = "At KA Global IP, we navigate the intricacies of international patent law to secure your technological advancements. Leveraging our global infrastructure and deep technical expertise, we provide a streamlined pathway for protecting your intellectual property in every market where you operate.",
+    ctaText = "Connect with Our Patent Practitioners",
     ctaHref = "/contact",
-    secondaryCtaText = "See capabilities",
+    secondaryCtaText = "Strategic Capabilities",
     secondaryCtaHref = "#capabilities",
     marqueeItems = [
         "Prior Art",
-        "Drafting & PCT/Paris",
+        "Drafting & Global Filings",
         "Office Action Strategy",
-        "Accelerated Programs",
+        "Accelerated Prosecution",
         "Portfolio Analytics",
-        "Renewals & Recordals",
     ],
 }: Props) {
     const [firstWord, ...rest] = title.split(" ");

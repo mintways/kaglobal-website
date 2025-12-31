@@ -38,22 +38,22 @@ const card: Variants = {
 };
 
 export default function IndustriesSection({
-    heading = "Empowering Innovation across Diverse Industries with Tailored IP Solutions.",
-    intro = `At KA Global IP, we proudly serve a wide range of clients, including enterprises, startups, R&D centers,
-universities, and GCCs. Our expertise in intellectual property management ensures that each client receives
-strategic guidance. We are dedicated to safeguarding innovations and fostering growth in every sector.`,
+    heading = "Empowering Diverse Industries through Specialized Intellectual Property Management",
+    intro = `At KA Global IP, we deliver high-impact IP strategies for a sophisticated client base, including multinational enterprises, 
+    emerging startups, R&D centers, academic institutions, and Global Capability Centers (GCCs). Our framework is 
+    designed to safeguard cross-sector innovations and catalyze sustainable growth through expert guidance and technical precision.`,
     items = [
         {
-            title: "Supporting Startups And Enterprises With Comprehensive IP Management Services",
-            text: "Our tailored services cater to the unique needs of each client.",
+            title: "Scaling Startups & Global Enterprises",
+            text: "We provide bespoke IP management services that adapt to your organization’s scale. From initial protection for startups to complex portfolio optimization for large-scale enterprises, our solutions are engineered for commercial success.",
         },
         {
-            title: "Partnering With R&D Centers For Innovative Solutions And Global Protection",
-            text: "We collaborate closely with R&D centers to protect groundbreaking ideas.",
+            title: "Strategic Partnerships with R&D Centers",
+            text: "We collaborate closely with research and development hubs to secure groundbreaking discoveries. Our team ensures that high-value innovations are protected by robust global frameworks before they reach the competitive market.",
         },
         {
-            title: "Empowering Universities With Strategic IP Management And Support",
-            text: "Our services help universities navigate the complexities of intellectual property.",
+            title: "Advancing Academic & University Innovation",
+            text: "We empower universities and research institutions to navigate the intricate landscape of intellectual property. Our services facilitate the transition from academic research to protected commercial assets through strategic filing and lifecycle support.",
         },
     ],
 }: Props) {

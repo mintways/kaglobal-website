@@ -33,7 +33,7 @@ export default function DesignWhyUs() {
                 <div className="text-center">
                     <span className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/90 px-3 py-1 text-[11px] font-semibold tracking-[0.22em] text-gray-600 backdrop-blur-sm font-ptsans">
                         <span className="h-2 w-2 rounded-full bg-ka-maroon" />
-                        DESIGN
+                        Strategic Design Protection
                     </span>
 
                     <h2 className="mt-3 font-playfair text-[clamp(1.9rem,3.8vw,2.8rem)] leading-tight text-ka-ink">
@@ -43,13 +43,12 @@ export default function DesignWhyUs() {
                                 backgroundImage: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})`,
                             }}
                         >
-                            Why choose KA Global IP
+                            Why Partner with KA Global IP?
                         </span>{" "}
-                        for design protection
                     </h2>
 
                     <p className="mx-auto mt-4 max-w-3xl text-[15.5px] sm:text-[16px] leading-relaxed text-[#2B3852]/90 font-ptsans">
-                        Expertly crafted services to protect your intellectual property worldwide.
+                        We provide expertly crafted intellectual property solutions designed to safeguard your innovations in a competitive global marketplace.
                     </p>
                 </div>
 
@@ -57,18 +56,18 @@ export default function DesignWhyUs() {
                 <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:gap-7">
                     <FeatureCard
                         Icon={Zap}
-                        title={["Rapid, Affordable Protection", ""]}
-                        desc="Secure your design rights efficiently."
+                        title={["Optimized Filing & Efficiency", ""]}
+                        desc="Secure your design rights through streamlined workflows that prioritize speed without compromising cost-effectiveness"
                     />
                     <FeatureCard
                         Icon={Globe2}
-                        title={["Global Strategy, Local Execution", ""]}
-                        desc="Comprehensive support across countries."
+                        title={["Global Vision, Regional Expertise", ""]}
+                        desc="Navigate international IP landscapes with confidence. We combine high-level global strategy with nuanced local execution across 90+ jurisdictions."
                     />
                     <FeatureCard
                         Icon={Asterisk}
-                        title={["Lifecycle Oversight", ""]}
-                        desc="Complete management from initial filing to ongoing maintenance."
+                        title={["End-to-End Portfolio Management", ""]}
+                        desc="Experience comprehensive lifecycle oversight, from initial novelty assessments and filing to proactive maintenance and renewals."
                     />
                 </div>
             </div>

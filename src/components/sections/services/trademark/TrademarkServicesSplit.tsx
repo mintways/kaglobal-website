@@ -17,29 +17,30 @@ const KA = {
 };
 
 export default function TrademarkServicesSplit({
-    eyebrow = "Comprehensive",
-    heading = "Trademark Protection Services",
-    intro = `Navigate the complex world of trademark protection with our end-to-end services designed to secure your brand’s legal rights globally`,
+    eyebrow = "End-to-End Trademark Solutions",
+    heading = "Navigating the Global IP Landscape with Precision",
+    intro = `Secure your brand’s legal foundation through our comprehensive trademark services. From initial discovery to long-term portfolio growth, 
+    we provide the strategic framework necessary to protect your identity in any market.`,
     items = [
         {
-            title: "Pre-clearance Search",
+            title: "Pre-clearance & Risk Assessment",
             desc:
-                "Conduct thorough availability checks to ensure your brand name is unique and legally protectable across target markets.",
+                "Mitigate legal risk with exhaustive availability checks. We ensure your brand name and logo are unique and protectable within your target jurisdictions before investment.",
         },
         {
-            title: "Global Trademark Protection",
+            title: "Strategic Global Registration",
             desc:
-                "Submit coordinated trademark applications across multiple jurisdictions with precision and strategic planning.",
+                "Execute coordinated trademark applications across 100+ countries. Our team manages the complexities of local regulations to ensure seamless multi-jurisdictional filing.",
         },
         {
-            title: "Efficient Global Trademark Protection via Madrid",
+            title: "International Expansion via the Madrid System",
             desc:
-                "Leverage international protocols like Madrid System to extend your trademark protection efficiently and cost-effectively.",
+                "Leverage the WIPO Madrid System for centralized, cost-effective brand protection. Extend your reach across 130+ member countries through a single, streamlined application",
         },
         {
-            title: "Portfolio Management",
+            title: "Strategic Portfolio Management",
             desc:
-                "Maintain comprehensive oversight with proactive monitoring and strategic renewal management.",
+                "Maintain absolute control over your global assets. Our proactive oversight includes continuous monitoring for potential infringements and automated management of renewal deadlines    ",
         },
     ],
 }: Props) {

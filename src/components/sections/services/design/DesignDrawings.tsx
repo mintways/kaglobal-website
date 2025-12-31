@@ -25,7 +25,7 @@ export default function DesignDrawings() {
                 <div className="md:col-span-7">
                     <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1 text-[11px] font-ptsans font-semibold tracking-widest text-gray-600">
                         <span className="h-2 w-2 rounded-full bg-ka-maroon" />
-                        DRAWINGS
+                        IP Illustration & Drafting Services
                     </div>
 
                     <h2 className="text-[clamp(1.9rem,3.8vw,2.6rem)] leading-tight text-ka-ink">
@@ -33,21 +33,22 @@ export default function DesignDrawings() {
                             className="font-playfair bg-clip-text text-transparent"
                             style={{ backgroundImage: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})` }}
                         >
-                            Compliant
+                            Ensuring Design Drawing
                         </span>{" "}
-                        design drawings preparation
+                        Compliance Worldwide
                     </h2>
 
                     <p className="font-ptsans mt-4 sm:mt-5 max-w-2xl text-[15.5px] sm:text-[16.5px] leading-7 text-[#2B3852]/90">
-                        Our Illustrations team delivers design drawings fully compliant with international IP standards. We ensure 
-                        technical accuracy and visual clarity to support smooth approvals.
+                        KA Global IP’s dedicated Illustrations team delivers technically precise design drawings that are fully compliant with all international intellectual property 
+                        standards. We guarantee visual clarity and accuracy to facilitate smooth examination and approval processes across global IP offices.
+
                     </p>
 
                     <ul className="font-ptsans mt-5 sm:mt-6 space-y-3 text-[14.5px] sm:text-[15px] text-[#1F2A44]/90">
                         {[
-                            "Comprehensive multi-view illustrations (front, side, isometric)",
-                            "Precise lines, shading, and sectional representation",
-                            "Global-standard sheet formats and labelling",
+                            "Full scope of views including front, side, isometric, and exploded representations (front, side, isometric)",
+                            "Precise line work, appropriate shading, and detailed sectional representations",
+                            "Adherence to international-standard sheet formats, meticulous labeling, and annotation requirements.",
                         ].map((text, i) => (
                             <li key={i} className="flex items-start gap-3">
                                 <span

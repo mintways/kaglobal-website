@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function CTASection({
     heading = "Comprehensive Global Brand Protection",
-    text = "Tailored trademark strategies to secure and strengthen your brand worldwide.",
-    buttonText = "Schedule a consultation",
+    text = "Strategic Trademark Solutions for a Borderless Marketplace",
+    buttonText = "Schedule a Strategic Consultation",
     buttonHref = "/contact",
 }) {
     return (

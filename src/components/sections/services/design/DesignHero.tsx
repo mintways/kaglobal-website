@@ -8,7 +8,7 @@ const KA = {
 };
 
 export default function DesignHero() {
-    const title = "Comprehensive Design Rights Management Globally";
+    const title = "Global Expertise in Comprehensive Design Rights";
     const [first, ...rest] = title.split(" ");
     const tail = rest.join(" ");
 
@@ -48,7 +48,7 @@ export default function DesignHero() {
                     {/* kicker */}
                     <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/90 px-3 py-1 text-[11px] font-semibold tracking-widest text-gray-600 backdrop-blur-sm font-ptsans">
                         <span className="h-2 w-2 rounded-full bg-ka-maroon" />
-                        DESIGNS
+                        DESIGN
                     </div>
 
                     {/* heading */}
@@ -63,8 +63,8 @@ export default function DesignHero() {
                     </h1>
 
                     <p className="mt-5 max-w-2xl text-[15.5px] sm:text-[16.5px] leading-7 text-[#2B3852]/90 font-ptsans">
-                        Across 90+ countries, KA Global IP delivers robust design protection solutions. We assist innovators
-                        in securing and maintaining their product designs with accuracy and strategic guidance.
+                        KA Global IP provides robust, end-to-end design protection across 90+ jurisdictions. We empower innovators to secure, 
+                        manage, and defend their unique product aesthetics through precision-driven strategic guidance.
                     </p>
 
                     {/* CTA block */}
@@ -73,11 +73,11 @@ export default function DesignHero() {
                             href="/services/design"
                             className="w-full sm:w-fit rounded-2xl bg-gradient-to-r from-[#7F2B38] to-[#4D1475] px-8 py-3 text-[15px] font-semibold text-white transition-transform hover:-translate-y-0.5 text-center"
                         >
-                            Explore
+                            Explore Our Services
                         </Link>
 
                         <div className="flex flex-wrap gap-3">
-                            {["Hague System", "Novelty & Prior Art Check", "Design Renewals"].map((t) => (
+                            {["Hague System", "Novelty & Prior Art Research", "Design Renewals"].map((t) => (
                                 <span
                                     key={t}
                                     className="rounded-full border border-gray-300 bg-white px-4 py-2 text-[13.5px] sm:text-sm text-gray-700 font-ptsans"

@@ -24,24 +24,24 @@ const KA = {
 };
 
 export default function TrademarkWhyChoose({
-    eyebrow = "Trusted",
-    title = "WHY CHOOSE KA GLOBAL IP",
-    subtitle = "Experience comprehensive trademark protection with a partner recognized for excellence and global reach.",
-    cta = { label: "GET STARTED", href: "/contact" },
+    eyebrow = "A Trusted Partner in Global IP Excellence",
+    title = "Secure Your Brand with Proven Expertise",
+    subtitle = "Partner with KA Global IP to experience comprehensive trademark protection backed by a reputation for excellence. We combine deep legal insights with a vast global reach to ensure your brand remains resilient in a competitive international landscape.",
+    cta = { label: "GET STARTED TODAY", href: "/contact" },
     features = [
         {
-            title: "GLOBAL REACH",
-            desc: "Trusted trademark protection in 140+ jurisdictions — 32,000 trademarks and counting",
+            title: "RECOGNIZED EXCELLENCE",
+            desc: "High-tier strategic guidance trusted by innovators worldwide.",
             icon: Globe2,
         },
         {
-            title: "LIFECYCLE COVERAGE",
-            desc: "Our services span the complete trademark lifecycle, encompassing filing, registration, enforcement, and licensing.",
+            title: "GLOBAL INFRASTRUCTURE",
+            desc: "Seamless execution across 100+ jurisdictions.",
             icon: RefreshCcw,
         },
         {
-            title: "INDUSTRY RECOGNITION",
-            desc: "Ranked and trusted by leading IP organizations including IP Stars, IAM, and Forbes India.",
+            title: "CLIENT-CENTRIC RESULTS",
+            desc: "Tailored IP strategies that align with your commercial objectives.",
             icon: Award,
         },
         {

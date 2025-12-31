@@ -47,7 +47,7 @@ export default function DesignManagement() {
                     {/* Eyebrow */}
                     <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1 text-[11px] font-ptsans font-semibold tracking-widest text-gray-600">
                         <span className="h-2 w-2 rounded-full bg-ka-maroon" />
-                        MANAGEMENT
+                        Portfolio & Administrative Management
                     </div>
 
                     {/* Heading */}
@@ -56,25 +56,24 @@ export default function DesignManagement() {
                             className="bg-clip-text text-transparent"
                             style={{ backgroundImage: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})` }}
                         >
-                            Administrative
+                            Centralized Control Over Your
                         </span>{" "}
-                        &amp; portfolio management
+                        Global IP Assets
                     </h2>
 
                     {/* Intro */}
                     <p className="font-ptsans mt-4 sm:mt-5 max-w-2xl text-[15.5px] sm:text-[16.5px] leading-7 text-[#2B3852]/90">
-                        Centralize your design portfolio with precision tracking and effortless control. Our management system
-                        covers deadlines, renewals, and strategic portfolio insights, ensuring your assets remain protected and
-                        optimized across jurisdictions.
+                        Simplify the oversight of your design portfolio with KA Global IP. We provide precision tracking, automated deadline monitoring, 
+                        and strategic portfolio insights to ensure your intellectual property assets remain protected, optimized, and compliant across all jurisdictions.
                     </p>
 
                     {/* Chips — Core Capabilities */}
                     <div className="mt-5 sm:mt-6 flex flex-wrap gap-3">
                         {[
-                            "Global docketing & maintenance",
-                            "Deadline monitoring & reminders",
-                            "Centralized renewal workflows",
-                            "Ownership & license recordals",
+                            "Global Docketing",
+                            "Proactive Monitoring",
+                            "Streamlined Renewals",
+                            "Ownership Integrity",
                         ].map((t) => (
                             <span
                                 key={t}
@@ -88,9 +87,9 @@ export default function DesignManagement() {
                     {/* Bullet points */}
                     <ul className="font-ptsans mt-5 sm:mt-6 space-y-3 text-[14.5px] sm:text-[15px] text-[#1F2A44]/90">
                         {[
-                            "Integrated reports on live, pending, and expired designs",
-                            "Multi-jurisdictional renewals with transparent cost tracking",
-                            "Automated portfolio dashboards for portfolio health and ROI",
+                            "Integrated reporting on live, pending, and expired designs for full transparency.",
+                            "Multi-jurisdictional renewal management with transparent cost tracking",
+                            "Automated portfolio dashboards providing health metrics and ROI analysis.",
                         ].map((text, i) => (
                             <li key={i} className="flex items-start gap-3">
                                 <span
@@ -108,7 +107,7 @@ export default function DesignManagement() {
                             href="/contact"
                             className="inline-flex w-full sm:w-auto items-center justify-center rounded-2xl bg-gradient-to-r from-[#7F2B38] to-[#4D1475] px-8 py-3 text-[15px] font-semibold text-white transition-transform hover:-translate-y-0.5"
                         >
-                            Simplify your management
+                            Simplify Your Portfolio Management
                         </Link>
                     </div>
                 </div>

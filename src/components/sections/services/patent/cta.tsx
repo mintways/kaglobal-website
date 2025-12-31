@@ -10,9 +10,9 @@ type Props = {
 };
 
 export default function CTASection({
-    heading = "Ready To Elevate Your IP Strategy?",
-    text = "Discover how our strategic advisory services can transform your intellectual property into a powerful business asset.",
-    buttonText = "CONTACT US",
+    heading = "Ready to Elevate Your IP Strategy?",
+    text = "Discover how KA Global IP’s strategic advisory services can transform your portfolio from a cost center into a powerful, measurable business asset and competitive advantage.",
+    buttonText = "Schedule a Consultation",
     buttonHref = "/contact",
 }: Props) {
     return (

@@ -26,7 +26,7 @@ export default function DesignProtection() {
                     {/* Eyebrow */}
                     <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/90 px-3 py-1 text-[11px] font-ptsans font-semibold tracking-widest text-gray-600 backdrop-blur-sm">
                         <span className="h-2 w-2 rounded-full bg-ka-maroon" />
-                        PROTECTION
+                        Strategic Global Design Protection
                     </div>
 
                     {/* Heading */}
@@ -35,22 +35,21 @@ export default function DesignProtection() {
                             className="font-playfair bg-clip-text text-transparent"
                             style={{ backgroundImage: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})` }}
                         >
-                            Direct & International
+                            Navigating International IP 
                         </span>{" "}
-                        Design Protection
+                        Landscapes with Precision
                     </h2>
 
                     {/* Intro paragraph */}
                     <p className="font-ptsans mt-4 sm:mt-5 max-w-2xl text-[15.5px] sm:text-[16.5px] leading-7 text-[#2B3852]/90">
-                        Navigate complex global IP landscapes with a strategy that fits your launch plan. We
-                        advise on national filings, Paris Convention priorities, and Hague System applications
-                        to achieve cost-efficient coverage and seamless global registration.
+                        KA Global IP aligns your design protection with your international commercialization strategy. We provide expert counsel on national filings, 
+                        Paris Convention priority claims, and Hague System applications to ensure cost-efficient coverage and seamless global registration.
                     </p>
 
                     {/* Chips */}
                     <div className="mt-6 flex flex-wrap gap-3">
                         {[
-                            "National (Direct) Filing",
+                            "National (Direct) Filings",
                             "Paris Convention – 6/12-month Priority",
                             "Hague System (WIPO) – Centralized",
                         ].map((t) => (
@@ -66,10 +65,10 @@ export default function DesignProtection() {
                     {/* Bullet list */}
                     <ul className="font-ptsans mt-6 space-y-3 text-[15px] text-[#1F2A44]/90">
                         {[
-                            "Jurisdiction-specific formalities (views, shading, legends)",
-                            "Priority planning & deferment options where available",
-                            "Multi-design and related-design filing strategies",
-                            "Centralized renewals and monitoring across territories",
+                            "Adherence to jurisdiction-specific formalities, including shading, legends, and view requirements",
+                            "Strategic timing of filings to preserve novelty and manage public disclosure",
+                            "Specialized multi-design and related-design filing strategies to maximize protection.",
+                            "Centralized renewals and proactive monitoring across all territories",
                         ].map((text, i) => (
                             <li key={i} className="flex items-start gap-3">
                                 <span
@@ -87,7 +86,7 @@ export default function DesignProtection() {
                             href="/contact"
                             className="inline-flex w-full sm:w-auto items-center justify-center rounded-2xl bg-gradient-to-r from-[#7F2B38] to-[#4D1475] px-8 py-3 text-[15px] font-semibold text-white transition-transform hover:-translate-y-0.5"
                         >
-                            Discuss your route
+                            Consult an IP Strategist
                         </Link>
                     </div>
                 </div>

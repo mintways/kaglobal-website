@@ -38,14 +38,14 @@ const card: Variants = {
 };
 
 export default function Overview({
-    heading = "Full spectrum of patent services",
-    intro = "From invention capture to global filing and maintenance, executing each step with expert precision and timeliness",
+    heading = "Full Spectrum Patent Services",
+    intro = "We manage the entire patent lifecycle, from initial invention capture to global filing and ongoing maintenance, executing each phase with expert precision and timeliness.",
     items = [
-        { title: "Patentability & Prior Art", text: "Novelty & non-obviousness searches across global databases and NPL." },
-        { title: "Drafting & Filing", text: "High-quality specifications and strategic claim sets for PCT & direct filings." },
-        { title: "Prosecution", text: "Office Action strategy, interviews, amendments, and accelerated programs." },
-        { title: "Portfolio Management", text: "Dashboards, deadlines, and analytics for informed IP decisions." },
-        { title: "Renewals & Recordals", text: "Automated reminders, transparent pricing, and compliance across jurisdictions." },
+        { title: "Patentability & Prior Art Analysis", text: "Conducting comprehensive novelty and non-obviousness searches across global patent databases and non-patent literature (NPL) to determine eligibility." },
+        { title: "Drafting & Filing", text: "Developing high-quality specifications and strategically robust claim sets for both PCT and direct national filings." },
+        { title: "Prosecution Strategy", text: "Implementing effective Office Action strategies, facilitating examiner interviews, drafting crucial amendments, and managing accelerated examination programs." },
+        { title: "Portfolio Management & Analytics", text: "Providing transparent dashboards, critical deadline management, and data-driven analytics to support informed intellectual property decisions." },
+        { title: "Renewals & Recordals", text: "Ensuring seamless global compliance through automated reminders, clear transparent pricing structures, and meticulous recordals across all jurisdictions." },
     ],
 }: Props) {
     const [first, ...rest] = heading.split(" ");

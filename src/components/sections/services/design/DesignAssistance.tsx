@@ -30,7 +30,7 @@ export default function DesignAssistance() {
                     {/* Eyebrow */}
                     <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1 text-[11px] font-ptsans font-semibold tracking-widest text-gray-600">
                         <span className="h-2 w-2 rounded-full bg-ka-maroon" />
-                        ASSISTANCE
+                        Office Action & Technical Support
                     </div>
 
                     {/* Heading */}
@@ -39,25 +39,24 @@ export default function DesignAssistance() {
                             className="bg-clip-text text-transparent"
                             style={{ backgroundImage: `linear-gradient(90deg, ${KA.maroon}, ${KA.purple})` }}
                         >
-                            Office actions
+                            Responsive Expertise for Design
                         </span>{" "}
-                        &amp; replacement-sheet support
+                        Examination Success
                     </h2>
 
                     {/* Intro */}
                     <p className="font-ptsans mt-4 max-w-2xl text-[15.5px] sm:text-[16.5px] leading-7 text-[#2B3852]/90">
-                        Respond to design examination reports with confidence. We prepare precise corrections,
-                        replacement drawings, and argumentation tailored to each authority’s formalities and
-                        practice.
+                        Navigate complex examination reports with precision. KA Global IP provides technical corrections, replacement illustrations, 
+                        and strategic argumentation tailored to the specific formalities and practices of global IP offices.
                     </p>
 
                     {/* Chips: what we handle */}
                     <div className="mt-6 flex flex-wrap gap-3">
                         {[
-                            "Formal defects & view consistency",
-                            "Shading / broken-lines corrections",
-                            "Legend & reference clean-up",
-                            "Late-filed drawings & pagination",
+                            "Formalities & Consistency",
+                            "Technical Corrections",
+                            "Data Integrity",
+                            "Filing Support",
                         ].map((t) => (
                             <span
                                 key={t}
@@ -71,9 +70,9 @@ export default function DesignAssistance() {
                     {/* Benefits bullets */}
                     <ul className="font-ptsans mt-6 space-y-3 text-[15px] text-[#1F2A44]/90">
                         {[
-                            "Authority-specific templates and phrasing for faster acceptance",
-                            "Pixel-accurate redraws delivered in compliant sheet formats",
-                            "Coordinated filings across multiple jurisdictions",
+                            "Utilization of authority-specific templates and localized phrasing to reduce further objections.",
+                            "Pixel-accurate redraws delivered in WIPO-compliant sheet formats.",
+                            "Seamless management of simultaneous office actions across multiple jurisdictions.",
                         ].map((text, i) => (
                             <li key={i} className="flex items-start gap-3">
                                 <span
@@ -91,7 +90,7 @@ export default function DesignAssistance() {
                             href="/contact"
                             className="inline-flex w-full sm:w-auto items-center justify-center rounded-2xl bg-gradient-to-r from-[#7F2B38] to-[#4D1475] px-8 py-3 text-[15px] font-semibold text-white transition-transform hover:-translate-y-0.5"
                         >
-                            Get assistance
+                            Request Technical Assistance
                         </Link>
                     </div>
                 </div>
